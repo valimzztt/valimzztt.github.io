@@ -1,17 +1,8 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-[jekyll-organization]: https://github.com/jekyll
+Welcome! I am currently a Master's student in Physics at McGill University, working in the [Ultrafast THz Spectroscopy Laboratory](https://thz.lab.mcgill.ca/), under the supervision of Professor David Cooke. My research focuses on ultrabroad THz spectroscopy to investigate the dynamics of polarons in halide perovskites.
+I am passionate about understanding quantum materials and their applications in optoelectronic devices, with a strong interest in contributing to sustainable technologies.
+Feel free to explore this site to learn more about my research, publications, and ongoing projects!
