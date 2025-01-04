@@ -24,12 +24,12 @@
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
   }
   
   .contact-form input:focus,
   .contact-form textarea:focus {
-    border-color: #007BFF;
+    border-color: #064486;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   }
@@ -38,7 +38,7 @@
     display: block;
     width: 100%;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #1a5ba0;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -49,9 +49,9 @@
   }
   
   .contact-form button:hover {
-    background-color: #0056b3;
+    background-color: #2b77c9;
   }
   
   .contact-form button:active {
-    background-color: #003f7f;
+    background-color: #02274d;
   }
