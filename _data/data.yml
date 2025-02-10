@@ -81,46 +81,66 @@ experiences:
         time: 2014 - 2015
         company: Stewart Blusson Quantum Matter Institute, Vancouver
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
-      - role: Energy System Designer and Software Developer
-        time: 2021 - 2024
+          Hallas Lab – Prof. Dr. Alannah Hallas
+          Investigated the structural stability and magnetic properties of pyrochlore compounds Li(Ga,In)Cr₄O₈ using ab-initio methods.
+          Developed a computational approach combining DFT ground-state energy calculations, Wannierization, and first-principles linear-response techniques to resolve magnetic exchange interactions.
+            - Gained proficiency in VASP, Quantum Espresso, and Wannier90.
+            - Identified key factors influencing structural stability and its interplay with magnetic properties.
+
+      - role: Energy System Designer & Software Developer
+        time: 12/2021 - 05/2024
         company: Sustaingineering, UBC, Vancouver
         details: |
-          Designed and assembled a hybrid renewable energy system for the Sustainable Mobile Research Testbed (SMRT) project, incorporating solar panels, batteries, and control components to create an off-grid mobile home.
-          Developed a web application for remote monitoring, capturing data for real-time monitoring of a water pump system in Nicaragua.
-            - Bullet point
-            - Bullet point
+          Member of the Electrical and Software Team at Sustaingineering, an Engineering Design Team dedicated to addressing sustainability challenges through technology.
+          Designed and assembled a hybrid renewable energy system for the Sustainable Mobile Research Testbed (SMRT) project, incorporating solar panels, batteries, and control components for an off-grid mobile home.
+          Developed a web application for remote monitoring, capturing real-time data for a water pump system in Nicaragua.
+
+      - role: Summer Research Assistant
+        time: 05/2023 - 08/2023
+        company: Stewart Blusson Quantum Matter Institute, UBC, Vancouver
+        details: |
+          Hallas Lab – Prof. Dr. Alannah Hallas
+          Developed a data-driven framework to predict material properties in high-entropy oxides and intermetallic systems.
+          Conducted ab-initio calculations of electronic properties using VASP and Quantum Espresso on HPC clusters.
+          Applied Machine Learning techniques to the Cluster Expansion Formalism for deriving effective energy models.
+            - Wrote Monte Carlo simulations in Python to study finite thermodynamic properties of intermetallic systems.
+
+      - role: Summer Research Assistant
+        time: 05/2022 - 09/2022
+        company: Max-Planck-Institute for Solid State Research, Stuttgart, Germany
+        details: |
+          Member of the Kaiser Group, focusing on strongly correlated electron materials and ultrafast spectroscopy.
+          Built a pump-probe and pump-pump-probe setup to study Ta₂NiSe₅ and 2H-NbSe₂, investigating excitonic insulator transitions and superconducting properties.
+          Conducted data analysis on beamtime data using Python and Origin.
+            - Gained expertise in advanced nonlinear optical methods, particularly ultra-broadband pump-probe spectroscopy.
+            - Converted the control software for a lock-in amplifier from LabVIEW to Python.
+
+      - role: Research Assistant & Software Developer
+        time: 05/2021 - 09/2021
+        company: Stewart Blusson Quantum Matter Institute, UBC, Vancouver
+        details: |
+          Member of the ARPES group under Dr. Andrea Damascelli, studying structural, electronic, and magnetic properties of novel quantum materials.
+          Developed a Python-based Graphical User Interface (GUI) to facilitate tracking micrometer-sized samples within the ARPES spectrometer.
+          Collaborated on hardware implementations to improve sample positioning during laser-based photoemission experiments on cuprates.
+
+      - role: High School Research Internship
+        time: 06/2019 - 07/2019
+        company: Max-Planck-Institute for Astronomy, Heidelberg, Germany
+        details: |
+          Conducted research on the orbit of the star S2 using Sloan Digital Sky Survey data.
+          Developed Python and C++ scripts for data analysis and orbital modeling.
+
+      - role: Internship at IBM
+        time: 05/2019 - 06/2019
+        company: IBM Studios, Milan, Italy
+        details: |
+          Attended sessions on IT, cognitive computing, and big data.
+          Developed a chatbot using Watson Assistant on the IBM Bluemix platform.
+
 
 certifications:
       title: Certifications
       list:
-        - name: CV Builder
-          start: 2020
-          end: 2021
-          organization: Microsoft
-          credentialid: 111-222
-          credentialurl: www.google.com
-          credentialname: Google
-          details: |
-            Details about cert. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-            Nullam eget orci purus. Nullam ultrices neque nibh.
-            Aenean fermentum, felis vulputate suscipit accumsan,
-            sem enim bibendum augue, sed convallis arcu lacus at dui.
-            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-            Praesent venenatis erat non augue suscipit consectetur.
-
-            Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-            fringilla vel. Ut euismod, sem sed vulputate venenatis,
-            justo diam viverra velit, sed rhoncus leo leo eu justo.
-            Suspendisse placerat risus ante, sed porta nisi blandit at.
         - name: Git learning
           start: 2019
           end:
@@ -128,21 +148,17 @@ certifications:
           credentialid: 111-222
           credentialurl: www.github.com
           credentialname: Github
-          details: |
-            Older certification.
 
 projects:
     title: Projects
     intro: >
-      You can list your side projects in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+      Some of the 
     assignments:
-      - title: Velocity
-        link: "#hook"
+      - title: Using ML for Cluster Expansion
+        link: "https://github.com/valimzztt/CPSC440-Project"
         tagline: "A responsive website template designed to help startups promote, market and sell their products."
 
-      - title: DevStudio
+      - title: A Python-interface to perform signal from a THz-TRTS experiment. 
         link: "#"
         tagline: "A responsive website template designed to help web developers/designers market their services."
 
@@ -150,44 +166,38 @@ projects:
         link: "#"
         tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
 
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 sidebar:
   languages:
     title: Languages
     info:
       - idiom: English
         level: Fluent
-      - idiom: Spanish
-        level: Intermediate
+      - idiom: German
+        level: Native
+      - idiom: Italian
+        level: Native
       - idiom: French
+        level: Fluent
+      - idiom: Spanish
         level: Basic
 publications:
     title: Publications
     intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+      Below is a list of my publications in peer-reviewed journals.
+
     papers:
-      - title: The Art of Computer Programming
-        link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+      - title: "Dynamical interplay between superconductivity and charge density waves: A nonlinear terahertz study of coherently driven 2H-NbSe₂"
+        link: "https://doi.org/10.1103/PhysRevB.108.L100504"
+        authors: "Feng, Liwen; Cao, Jiayuan; Priessnitz, Tim; Dai, Yunyun; Oliveira, Thales; Yuan, Jiayu; Oka, Ryosuke; Kim, Min-Jae; Chen, Min; Ponomaryov, Alexey; Ilyakov, I.; Zhang, Haotian; Lv, Yongbo; Mazzotti, Valentina; Kim, Gideok; Christiani, Georg; Logvenov, Gennady; Wu, Dong; Huang, Yuan; Chu, Hao"
+        conference: "Physical Review B, Vol. 108, 2023"
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+      - title: "A versatile laser-based apparatus for time-resolved ARPES with micro-scale spatial resolution"
+        link: "https://doi.org/10.1063/5.0176170"
+        authors: "Dufresne, S. K. Y.; Zhdanovich, S.; Michiardi, M.; Guislain, B. G.; Zonno, M.; Mazzotti, V.; O'Brien, L.; Kung, S.; Levy, G.; Mills, A. K.; Boschini, F.; Jones, D. J.; Damascelli, A."
+        conference: "Review of Scientific Instruments, Vol. 95, 2024"
 
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+
+
 
 skills:
   title: Digital Skills
