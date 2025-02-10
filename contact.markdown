@@ -1,11 +1,10 @@
-
 ---
 layout: default
 title: Contact
 permalink: /contact/
 ---
 
-
+<link rel="stylesheet" href="{{ './assets/css/style.css' | relative_url }}">
 Please use the form below to get in touch:
 
 <form class="contact-form" action="https://formspree.io/f/xyzzebod" method="POST">

@@ -1,22 +1,27 @@
-{% assign skills = site.data.data.skills %} {% if skills %}
+{% assign skills = site.data.data.skills %}
+{% if skills %}
 <section class="skills-section section">
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
-    </span>
-    {{ skills.title }}
+    {% if skills.title %}{{ skills.title }}{% endif %}
   </h2>
 
   <div class="skillset">
-    {% for skill in skills.toolset %}
-    <div class="item">
+    {% assign items_per_page = 10 %}
+    {% assign current_page = 1 %}
+    {% assign total_items = skills.toolset | size %}
+    {% assign total_pages = total_items | divided_by: items_per_page | ceil %}
+    {% assign start_index = items_per_page | times: current_page | minus: items_per_page %}
+    {% assign end_index = items_per_page | times: current_page %}
+    {% assign paginated_skills = skills.toolset | slice: start_index, items_per_page %}
+    {% for skill in paginated_skills %}
+    <div class="item skill-item">
       <h3 class="level-title">{{ skill.name }}</h3>
-      {% assign skill_level = 'width: ' | append: skill.level %}
-      <div class="level-bar">
-        <div class="level-bar-inner" style="{{skill_level}}"></div>
-      </div>
-      <!--//level-bar-->
+      {% if skill.type %}
+      <p class="skill-type" style="font-style: italic; font-size: 0.9em;">{{ skill.type }}</p>
+      {% endif %}
     </div>
     <!--//item-->
     {% endfor %}

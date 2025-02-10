@@ -50,7 +50,7 @@ career-profile:
     title: Career Profile
     summary: |
       Feel free to download my CV [here](../assets/cv/my-cv.pdf).
-      
+         
 education:
     title: Education
     info:
@@ -58,46 +58,28 @@ education:
         university: McGill University
         time: 2024 - 2026
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
+
       - degree: BSc (Honours) in Computer Science and Physics 
         university: University of British Columbia (UBC)
         time: 2020-2024
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          - Graduated with distinction
+          - Relevant coursework: Data Structures, Algorithms, Machine Learning   
 
 experiences:
     title: Experiences
     info:
-      - role: Lead Developer
-        time: 2015 - Present
-        company: Startup Hubs, San Francisco
+      - role: Research Assistant
+        time: 2024 - Present
+        company: McGill University, Montreal
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-          error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo.
-            - Bullet point
-            - Bullet point
-      - role: Senior Software Engineer
+          My research focuses on probing the dynamics of polaron formation in all-inorganic perovskites using ultrabroadband terahertz spectroscopy
+          Involves extensive experimental work on an optical table, including the construction of a state-of-the-art THz Time-Domain Spectroscopy (THz-TDS) and Time-Resolved Terahertz Spectroscopy (TRTS) setup.
+          Analyzing the impact of polaron dynamics on charge carrier mobility and scattering, with the goal of improving the design of optoelectronic materials for energy conversion.
+          Operate various time-resolved systems, including an all air-plasma THz spectrometer with sub-50 fs and sub-meV resolution.
+      - role: Research Assistant 
         time: 2014 - 2015
-        company: Google, London
+        company: Stewart Blusson Quantum Matter Institute, Vancouver
         details: |
           Describe your role here lorem ipsum dolor sit amet, consectetuer
           adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
@@ -106,15 +88,12 @@ experiences:
           pellentesque eu, pretium quis, sem.
             - Bullet point
             - Bullet point
-      - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
+      - role: Energy System Designer and Software Developer
+        time: 2021 - 2024
+        company: Sustaingineering, UBC, Vancouver
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
+          Designed and assembled a hybrid renewable energy system for the Sustainable Mobile Research Testbed (SMRT) project, incorporating solar panels, batteries, and control components to create an off-grid mobile home.
+          Developed a web application for remote monitoring, capturing data for real-time monitoring of a water pump system in Nicaragua.
             - Bullet point
             - Bullet point
 
@@ -150,14 +129,7 @@ certifications:
           credentialurl: www.github.com
           credentialname: Github
           details: |
-            Older certification. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-            Nullam eget orci purus. Nullam ultrices neque nibh.
-            Aenean fermentum, felis vulputate suscipit accumsan,
-            sem enim bibendum augue, sed convallis arcu lacus at dui.
-            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-            Praesent venenatis erat non augue suscipit consectetur.
+            Older certification.
 
 projects:
     title: Projects
@@ -185,7 +157,16 @@ projects:
       - title: Delta
         link: "#"
         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
+sidebar:
+  languages:
+    title: Languages
+    info:
+      - idiom: English
+        level: Fluent
+      - idiom: Spanish
+        level: Intermediate
+      - idiom: French
+        level: Basic
 publications:
     title: Publications
     intro: |
@@ -208,6 +189,16 @@ publications:
         authors: Edgar T. Irons
         conference: "Comm. ACM 4 (1961), 51–55"
 
-
-footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+skills:
+  title: Digital Skills
+  toolset:
+    - name: Programming Languages
+      type: Python / C++ / Java / JavaScript / MATLAB 
+    - name: Web Development
+      type: HTML / CSS / React
+    - name: High Performance Computing
+      type: OpenMP / MPI
+    - name: Data Analysis
+      type: Pandas / Numpy / Scipy / Matplotlib
+    - name: Ab-initio DFT software
+      type: VASP / Quantum Espresso
