@@ -40,6 +40,26 @@ url: "" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+main_nav: true
+order: 1
+
+main_nav:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "CV"
+    url: /cv/
+  - title: "Hobbies"
+    url: /hobbies/
+  - title: "Contact"
+    url: /contact/
+  - title: "Posts"
+    url: /posts/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

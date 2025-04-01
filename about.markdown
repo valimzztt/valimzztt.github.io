@@ -1,8 +1,8 @@
 ---
 layout: page
 title: About
-permalink: /about/
-
+main_nav: true
+order: 2
 ---
 
 <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
