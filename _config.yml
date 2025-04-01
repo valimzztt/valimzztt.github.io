@@ -27,8 +27,19 @@ github_username:  valimzztt
 # Build settings
 theme: minima
 future: true
+hero:
+  image: /assets/images/header_image.jpg
+  overlay: true
+
 plugins:
   - jekyll-feed
+
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+cover: "/assets/header_image.jpg"
+logo: "/assets/logo.png"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
