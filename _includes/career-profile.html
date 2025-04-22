@@ -1,4 +1,4 @@
-{% assign career-profile = site.data.data.career-profile %}
+<link rel="stylesheet" href="{{ './css/style.css' | relative_url }}">
 {% if career-profile %}
 <section class="section summary-section">
 
@@ -9,10 +9,5 @@
     </span>
     {{ career-profile.title }}
   </h2>
-
-  <div class="summary">
-    {{ career-profile.summary | markdownify }}
-  </div><!--//summary-->
-    
 </section><!--//section-->
 {% endif %}

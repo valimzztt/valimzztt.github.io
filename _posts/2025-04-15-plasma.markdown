@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Generating Laser-Induced Plasma"
+date: 2025-04-15
+author: Valentina Mazzotti
+categories: [Lab Diaries]
+tags: [plasma, ultrafast]
+---
+
+This week, we had some visitors in the Department, and so we decided to show them what it means to operate a laser system with 35 fs pulse duration.  
+In our lab, we use a **Ti:Sapphire Coherent laser** system operating at a repetition rate of **1 MHz**, delivering **ultrashort femtosecond pulses** in the near-infrared (~800 nm).
+
+<video width="560" height="315" muted controls>
+  <source src="/assets/videos/Plasma.MP4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+### So, how can you generate plasma by focusing a femtosecond laser?
+
+When an intense femtosecond pulse is tightly focused, for example with a lens of focal length ~50–100 mm, the electric field becomes strong enough to **ionize air molecules**. This ionization occurs via nonlinear processes such as **multiphoton ionization** and **avalanche ionization**, which liberate electrons and create a **plasma spark** — often accompanied by a bright flash and audible pop!
+
+What’s special about femtosecond lasers is that the energy is packed into an incredibly short duration, leading to extremely high **peak powers**. Even with pulse energies in the microjoule range, the peak intensity at focus can easily exceed **10¹³ W/cm²**, enough to break down the air.
+
+This phenomenon is not only fun to demonstrate but also lies at the heart of various advanced applications, such as time-resolved spectroscopy. 

@@ -1,0 +1,126 @@
+/* Reset basic styles */
+   .contact-form {
+    background: #fff;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fcfcfc;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #007acc;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    background-color: #005fa3;
+  }
+
+  .hike-section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  .hike-section img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  .hike-section h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #007acc;
+  }
+  
+
+  .hero-header {
+    position: relative;
+    max-height: 500px;
+    overflow: hidden;
+  }
+  
+  .hero-img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 500px;
+    display: block;
+  }
+  
+  .hero-text {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+  }
+  
+  .hike-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  
+  .hike-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .hike-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .hike-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .hike-card h3 {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    color: #007acc;
+  }
+
+  

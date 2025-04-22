@@ -2,24 +2,9 @@
 layout: post
 title:  "Building Maximally Localized Wannier Functions"
 date:   2024-12-23 20:44:51 +0100
+author: Valentina Mazzotti 
 category: post
 ---
 
-One project I worked on involved creating Highly Localized Wannier Functions via 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+One project I worked on involved creating Highly Localized Wannier Functions using Density Functional Theory. The Wannier functions are a complete set of orthogonal functions used in solid-state physics. They were introduced by Gregory Wannier in 1937.Wannier functions are the localized molecular orbitals of crystalline systems.

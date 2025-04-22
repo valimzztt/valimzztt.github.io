@@ -1,0 +1,80 @@
+
+
+<div class="cv-wrapper">
+  
+    <main class="cv-main">
+      <section>
+        <h2>{{ site.data.cv['career-profile'].title }}</h2>
+        <p>{{ site.data.cv['career-profile'].summary | markdownify }}</p>
+      </section>
+  
+      <section>
+        <h2>{{ site.data.cv.education.title }}</h2>
+        {% for edu in site.data.cv.education.info %}
+          <div class="entry">
+            <strong>{{ edu.degree }}</strong>, {{ edu.university }} <span class="dates">{{ edu.time }}</span>
+            <p>{{ edu.details | markdownify }}</p>
+          </div>
+        {% endfor %}
+      </section>
+  
+      <section>
+        <h2>{{ site.data.cv.experiences.title }}</h2>
+        {% for exp in site.data.cv.experiences.info %}
+          <div class="entry">
+            <strong>{{ exp.role }}</strong>, {{ exp.company }} <span class="dates">{{ exp.time }}</span>
+            <p>{{ exp.details | markdownify }}</p>
+          </div>
+        {% endfor %}
+      </section>
+
+      <section>
+      <h2>Languages</h2>
+      <ul>
+        {% for lang in site.data.cv.sidebar.languages.info %}
+          <li><strong>{{ lang.idiom }} </strong>- {{ lang.level }}</li>
+
+        
+        {% endfor %}
+      </ul>
+     </section>
+  
+      <section>
+        <h2>{{ site.data.cv.projects.title }}</h2>
+        {% for proj in site.data.cv.projects.assignments %}
+          <div class="entry">
+            <strong><a href="{{ proj.link }}">{{ proj.title }}</a></strong>
+            <p>{{ proj.tagline | markdownify }}</p>
+          </div>
+        {% endfor %}
+      </section>
+  
+      
+      <section>
+        <h2>{{ site.data.cv.skills.title }}</h2>
+        <ul>
+          {% for skill in site.data.cv.skills.toolset %}
+            <li><strong>{{ skill.name }}:</strong> {{ skill.type }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section>
+        <h2>{{ site.data.cv.publications.title }}</h2>
+        <p>{{ site.data.cv.publications.intro | markdownify }}</p>
+        <ul>
+          {% for pub in site.data.cv.publications.papers %}
+            <li>
+              <strong>{{ pub.title }}</strong><br>
+              <em>{{ pub.authors }}</em><br>
+              {{ pub.conference }}<br>
+              <a href="{{ pub.link }}">Read more</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+  
+      
+    </main>
+  </div>
+  

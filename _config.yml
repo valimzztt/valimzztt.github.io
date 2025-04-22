@@ -42,16 +42,16 @@ logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
-sass:
-  sass_dir: _sass
 main_nav: true
 order: 1
+
+# Build settings
+compress-site: yes
+
 
 main_nav:
   - title: "Home"
     url: /
-  - title: "About"
-    url: /about/
   - title: "CV"
     url: /cv/
   - title: "Hobbies"
@@ -60,6 +60,11 @@ main_nav:
     url: /contact/
   - title: "Posts"
     url: /posts/
+
+collections:
+  hikes:
+    output: true
+    permalink: /hikes/:name/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
