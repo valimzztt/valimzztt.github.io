@@ -1,0 +1,78 @@
+---
+layout: post
+title: "Generating Third-Harmonic Light from a Femtosecond Ti:Sapphire Laser"
+date: 2025-04-28
+categories: [Lab Diaries]
+tags: [nonlinear optics, THG, femtosecond, UV, laser]
+---
+
+## 🧪 Generating Third-Harmonic Light from a Femtosecond Ti:Sapphire Laser
+
+This week, my task has been to set up a pump line, using a nonlinear crystal-based THG kit, that can convert the 800 nm fundamental pump pulse from the Ti:Sapphire oscillator we have into UV light. 
+
+Third-harmonic generation (THG) is a nonlinear optical process in which photons from a fundamental laser beam combine to produce new photons at three times the original frequency. In our case, we used a Ti:sapphire oscillator emitting pulses at 800 nm and aimed to generate light at 266 nm (UV) through THG.
+
+The THG process involves two steps:
+
+1. **Second-harmonic generation (SHG):**  
+   `ω + ω → 2ω` → converts 800 nm light into 400 nm
+
+2. **Sum-frequency generation (SFG):**  
+   `ω + 2ω → 3ω` → mixes 800 nm and 400 nm to produce 266 nm
+
+---
+
+### 🧱 Experimental Setup
+
+We used a pre-aligned THG kit provided by **EKSMA Optics**, which includes:
+
+- **Type I BBO crystal** for SHG (800 nm → 400 nm),
+- **Calcite group velocity delay plate** to synchronize 800 nm and 400 nm pulses,
+- **Dual-wavelength waveplate** to match polarization for THG,
+- **Second BBO crystal** for sum-frequency generation (800 nm + 400 nm → 266 nm),
+- **UV filters and harmonic separators** to isolate the 266 nm beam.
+
+The Type I BB
+
+1. **Generate 400 nm Light:**  
+   The first BBO crystal was rotated to maximize SHG. A color card and spectrometer confirmed successful generation.
+
+2. **Introduce Group Delay Compensation:**  
+   A calcite plate was inserted in the 800 nm beam path to delay the faster pulse and restore temporal overlap. Tilting the plate while monitoring UV output was crucial.
+
+3. **Match Polarizations:**  
+   The dual-wavelength waveplate was adjusted to set the proper polarization conditions for THG.
+
+4. **Optimize THG Crystal Angle:**  
+   The second BBO crystal was rotated until a clear UV signal at 266 nm was observed using a fluorescence card.
+
+---
+ 
+## 
+To be honest, I encountered a lot of challenges as the initial attempts showed no UV output. This was due to the fact that 
+
+- Initial attempts showed no UV output due to:
+  - Temporal walk-off between 800 nm and 400 nm pulses,
+  - Polarization mismatch in the waveplate,
+  - Incorrect crystal angle for phase matching.
+
+- Careful tuning of all optical elements was necessary.
+
+---
+
+### 🔬 Results
+
+Once aligned, a stable UV beam at **266 nm** was observed. Verification was done via:
+
+- UV-sensitive fluorescence card,
+- UV-enhanced photodiode (for approximate power),
+- Spectrometer (peak at 266 nm confirmed).
+
+Estimated output: **~10–100 µW**, consistent and tunable.
+
+---
+
+### 🧠 Reflections
+
+This experiment highlighted the importance of phase matching, temporal synchronization, and polarization in nonlinear optics. With proper alignment and diagnostics, even weak THG signals can be stabilized — enabling a UV source suitable for pump-probe spectroscopy and ultrafast science.
+

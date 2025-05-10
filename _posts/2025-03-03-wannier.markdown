@@ -19,7 +19,7 @@ $$
 H_{\text{at}} \varphi_n = E_n \varphi_n \tag{10.1}
 $$
 
-In the crystal, the atomic wavefunctions \( \varphi_n(\mathbf{r}) \) overlap with those of neighboring atoms. To account for the crystal potential, we express the Hamiltonian as:
+In the crystal, the atomic wavefunctions ` \varphi_n(\mathbf{r}) ` overlap with those of neighboring atoms. To account for the crystal potential, we express the Hamiltonian as:
 
 $$
 H = H_{\text{at}} + \Delta U(\mathbf{r})

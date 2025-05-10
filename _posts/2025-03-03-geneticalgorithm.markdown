@@ -50,14 +50,6 @@ Repeat steps 2–6 until the algorithm converges (or a maximum number of generat
 
 I used a simple GA to **minimize a multi-variable function** that didn’t have an analytical solution. I was surprised at how well it explored the space without requiring gradients or assumptions about the shape of the function.
 
-Here’s a quick animation showing the optimization process:
-
-<video width="640" height="360" controls>
-  <source src="/assets/videos/genetic-algorithm-demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
----
 
 ## 🧠 Reflection
 
