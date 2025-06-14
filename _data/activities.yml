@@ -1,0 +1,15 @@
+- title: "Social Media"
+  description: "Managing social media accounts to promote outreach activities"
+  image: "/assets/images/outreach/events.JPEG"
+  url: "outreach/social_media/"
+
+- title: "Public Talks"
+  description: "Organizing public talks and panels at McGill"
+  image: "/assets/images/public_talks_header.JPEG"
+  url: "/outreach/public_talks/"
+
+- title: "Outreach Activities"
+  description: "Various other outreach activities I engaged with!"
+  image: "/assets/images/outreach/events.JPEG"
+  url: "/outreach/activities/"
+

@@ -1,0 +1,127 @@
+---
+layout: default
+title: "Outreach Activities"
+permalink: /outreach/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
+  {{ site.head }}
+</head>
+
+
+
+<body>
+
+
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.description }}</p>
+      {% if page.button_text and page.button_link %}
+        <a href="{{ page.button_link }}" class="button">{{ page.button_text }}</a>
+      {% endif %}
+    </div>
+  </header>
+  
+<section class="outreach-intro">
+    <div class="container">
+      <p>
+        Throughout my academic journey, I have become passionate about Outreach.
+        As the Public Talks Coordinator of the Physics Department, I had the chance to organize the monthly Public Talks, aimed at a general audience.
+        This has been an extraordinary opportunity to connect students, general public and professors, as well as broaden my own knowledge and network.
+      </p>
+    </div>
+  </section>
+
+  <section class="grid-section">
+    {% for item in site.data.activities %}
+      <a href="{{ item.url | relative_url }}" class="grid-item" style="background-image: url('{{ item.image }}');">
+        <div class="overlay">
+          <h2>{{ item.title }}</h2>
+          <p>{{ item.description }}</p>
+        </div>
+      </a>
+    {% endfor %}
+  </section>
+
+  {% include footer.html %}
+</body>
+
+<style>
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/images/hikes/aosta.JPEG') center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+    color: #ddd;
+  font-size: 1.2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #fff;
+  color: #9f9f9f;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 2600px;
+  margin: auto;
+}
+
+.grid-item {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.grid-item * {
+  color: #fff !important;
+}
+
+.grid-item:hover {
+  transform: scale(1.03);
+}
+
+.overlay {
+  background: rgba(3, 3, 3, 0.55);
+  width: 100%;
+  padding: 1rem;
+}
+</style>

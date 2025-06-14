@@ -22,7 +22,7 @@ $$
 \frac{\partial^2 u}{\partial t^2} = c^2 \frac{\partial^2 u}{\partial x^2}
 $$ 
 
-with initial condition \( u(x, 0) = \frac{1}{2} \sin(2\pi x) \), and zero initial time derivative. The boundary conditions were Dirichlet (\( u(0, t) = u(1, t) = 0 \)).
+with initial condition $$u(x, 0) = \frac{1}{2} \sin(2\pi x)$$, and zero initial time derivative. The boundary conditions were Dirichlet (\( u(0, t) = u(1, t) = 0 \)).
 
 I used a fully connected feedforward neural network with three hidden layers. Initially, I used **leaky ReLU (or “sneaky ReLU”)** as the activation function. However, I quickly discovered that it was **not well-suited for this task**: the resulting solution lacked the smoothness and periodic structure expected of a wave equation, and the network struggled to converge.
 

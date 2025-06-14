@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Public Talks
-layout: page
-title: Public Talks
 permalink: /outreach/public_talks/
 ---
 

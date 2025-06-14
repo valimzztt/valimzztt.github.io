@@ -1,0 +1,11 @@
+- title: "24 hours of Science"
+  date: "May 2025"
+  description: "A panel exploring quantum computing and privacy with professors from McGill and ÉTS."
+  url: "/activities/quantum-panel/"
+  image: "/assets/images/activities/quantum.jpg"
+
+- title: "UBC Undergraduate Science Slam"
+  date: "March 24"
+  description: "A public panel exploring the origins of life and the search for life in our solar system."
+  url: "https://outreach.phas.ubc.ca/undergraduate-science-slams/"
+  image: "/assets/images/activities/life.jpg"
