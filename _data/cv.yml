@@ -159,9 +159,13 @@ projects:
         link: "#"
         tagline: "A responsive website template designed to help web developers/designers market their services."
 
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+      - title: Investigating magnetic nanolayering in MnNiAs via DFT, Cluster Expansion and Monte Carlo simulations
+        link: "https://github.com/valimzztt/SummerProjectQMI2023.git"
+        tagline: "Repository that collects Density Functional Theory (DFT) calculations, Cluster Expansion (CE) and Monte Carlo simulations to investigate the magnetically segregated nano layering in (Mn,Ni)As and extending the search of layering to other similar systems.."
+
+      - title: A Python-based GUI for tracking micrometer-sized samples in ARPES experiments
+        link: "https://github.com/valimzztt/ARPES_Sample_Position_Tracker_GUI.git"
+        tagline: "A Python-based GUI for tracking micrometer-sized samples in ARPES experiments, facilitating sample positioning during laser-based photoemission experiments on cuprates."
 
 sidebar:
   languages:

@@ -56,10 +56,12 @@ main_nav:
     url: /cv/
   - title: "Hobbies"
     url: /hobbies/
+  - title: "Outreach"
+    url: /outreach/
+  - title: "Research"
+    url: /posts/
   - title: "Contact"
     url: /contact/
-  - title: "Posts"
-    url: /posts/
 
 collections:
   hikes:

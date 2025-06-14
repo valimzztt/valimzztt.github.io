@@ -9,4 +9,4 @@ elevation: "1000 m"
 duration: "12 hours"
 ---
 # Mount Dinara, Croatia
-We started early, hiking through pine forests and reaching a summit with a stunning 360° view.
+On August 2024, a friend of mine 

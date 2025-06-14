@@ -1,0 +1,13 @@
+- title: "The Mystery of Dark Matter"
+  speaker: "Prof. Katelin Schutz"
+  date: "October 30, 2024"
+  location: "McGill University"
+  description: "A captivating talk on what we know and don't know about dark matter and the experimental search for it."
+  image: "talks/lifeonearth.png"
+
+- title: "Quantum Computing for Everyone"
+  speaker: "Dr. Simon Devost"
+  date: "November 28, 2024"
+  location: "McGill University"
+  description: "An introduction to quantum computing concepts and their implications for the future of technology."
+  image: "talks/quantumcomputing.png"
