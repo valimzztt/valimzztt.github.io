@@ -187,6 +187,11 @@ publications:
       Below is a list of my publications in peer-reviewed journals.
 
     papers:
+      - title: "Origin and scarcity of breathing pyrochlore lattices in spinel oxides"
+        link: "https://doi.org/10.1103/PhysRevMaterials.9.033602"
+        authors: "V. Mazzotti, S. S. Aamlid, A. A. Mancilla, J. Machts, M. Rutherford, J. Rottler, K. M. Kojima, and A. M. Hallas"
+        conference: "Phys. Rev. Materials 9, 033602, 2025"
+
       - title: "Dynamical interplay between superconductivity and charge density waves: A nonlinear terahertz study of coherently driven 2H-NbSe₂"
         link: "https://doi.org/10.1103/PhysRevB.108.L100504"
         authors: "Feng, Liwen; Cao, Jiayuan; Priessnitz, Tim; Dai, Yunyun; Oliveira, Thales; Yuan, Jiayu; Oka, Ryosuke; Kim, Min-Jae; Chen, Min; Ponomaryov, Alexey; Ilyakov, I.; Zhang, Haotian; Lv, Yongbo; Mazzotti, Valentina; Kim, Gideok; Christiani, Georg; Logvenov, Gennady; Wu, Dong; Huang, Yuan; Chu, Hao"
