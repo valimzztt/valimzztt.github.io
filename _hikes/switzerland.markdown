@@ -26,7 +26,6 @@ komoot_link: "https://www.komoot.com/smarttour/e1324739862/to-the-highest-peak-o
 
 ---
 
-## Overview
 On a sunny Saturdat of July 2022, I decided to drive from Stuttart, Germany (where I was doing an internship) to Swizterland todomyfirst solo-hike. I decided for a scenic alpine hike starting near Schwägalp and ascending to the summit of Säntis, offering some of the most stunning panoramic views of the Appenzell Alps Ihave ever seen. The trail was beautiful and winded through pastures, rugged rocky outcrops, and breathtaking ridgelines. I need to say that it was a quite challenging hike, with a high ratioof elevation versus of kms. Also, the top of the Säntis can be achieved by using a cable car so you will not have a lot of piece once youhaveclimbed to the top. Nevertheless, this has been one of the most breathtaking hikes I have everndone, and it keeps a special space in my heart. 
 
 ---

@@ -1,0 +1,128 @@
+---
+layout: post
+title:  "What Can We Learn from Time-Resolved Terahertz Spectroscopy?"
+date: 2025-04-12
+category: post
+---
+
+## Introduction
+
+Time-resolved terahertz spectroscopy (TRTS) is a powerful optical pump–THz probe technique used to study the ultrafast dynamics of charge carriers in materials. Unlike conventional electrical or optical probes, TRTS is sensitive to low-energy excitations in the far-infrared region (0.1–10 THz), making it uniquely suited for observing free carrier motion, polarons, excitons, and phonons on sub-picosecond timescales.
+
+How Does TRTS Work? In TRTS, a short optical pump pulse excites the sample, typically promoting electrons from the valence band to the conduction band. A time-delayed single-cycle THz pulse is then directed onto the sample to probe how this excitation modifies its dielectric response. By varying the delay between pump and probe, one can construct a time-dependent picture of carrier generation, relaxation, and recombination dynamics.
+
+In my own research, I used TRTS in reflection geometry on CdTe, a direct bandgap semiconductor. An 800 nm pump pulse—matching the bandgap energy of CdTe—excites the electrons, and the resulting changes in the reflected THz pulse are recorded.
+
+## Raw Data and Signal Processing
+
+The measurement is typically performed using a lock-in detection scheme. A mechanical chopper modulates the pump beam at a frequency synchronized to a sub-multiple of the laser repetition rate (often 1/4), allowing for differential measurements of the electric field with and without photoexcitation.
+
+This gives two sets of time-domain waveforms:
+
+- `E_ref(t)`: Reference THz field without pump  
+- `E_pump(t)`: THz field after excitation
+
+The differential electric field then given by $$ \Delta E(t) = E_{\text{pump}}(t) - E_{\text{ref}}(t) $$ 
+
+What information can be extracted from THz-TRTS? By fitting the reflectivity data to a Drude model, you can get information on the scattering time tau and the plasma frequency. 
+But what exactly is the plasma frequency? To understand that, we need to refer plasmons, which can be described in the classical picture as an oscillation of free electron density
+with respect to the fixed positive ions in a metal. To visualize a plasma oscillation, imagine a
+cube of metal placed in an external electric field pointing to the right. Electrons will move to
+the left side (uncovering positive ions on the right side) until they cancel the field inside the
+metal. If the electric field is removed, the electrons move to the right, repelled by each other
+and attracted to the positive ions left bare on the right side. They oscillate back and forth at
+the plasma frequency until the energy is lost in some kind of resistance or damping. Plasmons
+are a quantization of this kind of oscillation.
+
+
+From this, one can extract the **photoinduced change in reflectivity** \( \Delta R / R \), or compute the **complex conductivity** via Fourier transform and model fitting. So first you measure time-domain THz signals (with and without pump), then you Fourier transform to obtain complex reflectivity or transmission.  
+
+## Modeling with the Drude Model
+
+The Drude model provides a classical framework for understanding free carrier absorption in the THz regime. The frequency-dependent complex conductivity is given by:
+
+$$
+\sigma(\omega) = \frac{n e^2 \tau}{m^* (1 - i \omega \tau)}
+$$
+
+Where $$n$$ is the carrier density, $$\tau$$ the scattering time, $$ m^* $$ the effective mass, and $$ e $$ the elementary charge.
+
+By fitting the measured THz reflectivity or transmission to this model, you can extract:
+
+- **Carrier lifetime / scattering time** $$ \tau $$. 
+- **Plasma frequency** $$ \omega_p = \sqrt{\frac{n e^2}{\varepsilon_0 m^*}} $$
+
+## What Is the Plasma Frequency?
+
+The plasma frequency represents the natural oscillation rate of a free electron gas relative to the ionic background. In the classical picture, when electrons are displaced from equilibrium, the restoring force due to positive ions leads to collective oscillations. This frequency is a direct indicator of free carrier density and mobility in the system.
+
+A high plasma frequency implies a high density of mobile charges or a low effective mass—both desirable in materials for photovoltaics or high-speed electronics.
+
+TRTS isn't limited to simple Drude analysis. Depending on the system, more advanced models are needed:
+
+- **Drude–Smith model**: For backscattering-dominated transport (e.g., nanocrystalline materials)  
+- **Drude–Lorentz model**: For resonances due to phonons or polarons  
+
+In the case of CdTe, there is a strong phonon at 5THz, 
+In my work, I am exploring how to incorporate polaron dynamics into these models to understand how carrier–phonon interactions evolve after photoexcitation.
+
+
+# Using the Drude–Lorentz Model in THz Spectroscopy
+
+In time-resolved terahertz spectroscopy (TRTS), understanding the complex dielectric response of a material is crucial. For materials like CdTe that exhibit strong optical phonons in the THz range (e.g., at ~5 THz), the standard Drude model is insufficient. This is where the **Drude–Lorentz model** comes in. In fact, while the Drude model describes the response of **free carriers** (electrons or holes), it neglects bound charge resonances such as optical phonons, which strongly affect the THz dielectric function in many semiconductors and polar materials. CdTe, for example, has a **longitudinal optical (LO) phonon near 5 THz**, which couples to the electric field of the THz probe. To model this accurately, we need to add a **Lorentz oscillator** to represent the phonon contribution.
+
+
+##  Drude–Lorentz Dielectric Function
+
+The frequency-dependent complex dielectric function is given by:
+
+$$
+\varepsilon(\omega) = \varepsilon_\infty - \frac{\omega_p^2}{\omega^2 + i\omega/\tau} + \sum_j \frac{S_j \omega_{j}^2}{\omega_{j}^2 - \omega^2 - i\omega\Gamma_j}
+$$
+
+Where:
+- $$ \varepsilon_\infty $$: High-frequency dielectric constant (background permittivity)
+- $$ \omega_p $$: Plasma frequency of the free carriers
+- $$ \tau $$: Carrier scattering time
+- $$ \omega_j $$: Resonance frequency of the \( j \)-th phonon (e.g., 5 THz)
+- $$ \Gamma_j $$: Damping coefficient of the phonon
+- $$ S_j $$: Oscillator strength
+
+---
+For CdTe, the fitting model included 
+1. **One Drude term**:
+   - $$\omega_p$$: from carrier density  
+   - $$\tau$$: from carrier mobility or extracted via fitting
+
+2. **One Lorentz oscillator** for the LO phonon at ~5 THz:
+   - $$\omega_0 \approx 5\,\text{THz}$$  
+   - $$\Gamma$$: phonon linewidth (fit from data)  
+   - $$S$$: strength (fit)
+
+3. Fit the result to the Drude–Lorentz model to extract:
+   - **Scattering time** $$\tau$$  
+   - **Carrier density** via $$\omega_p$$  
+   - **Phonon parameters**: $$\omega_0$$, $$\Gamma$$, $$S$$
+
+---
+
+## 💡 Notes
+
+- The plasma frequency is related to the carrier density \( n \) as:
+
+\[
+\omega_p^2 = \frac{n e^2}{\varepsilon_0 m^*}
+\]
+
+- In reflection geometry, fitting may require solving the **Fresnel equations** for multilayer systems if substrates are involved.
+
+- For time-resolved experiments, repeat the fit as a function of pump–probe delay to track how carrier dynamics evolve in time.
+
+---
+
+
+
+
+## Conclusion
+
+TRTS provides a non-contact, ultrafast window into the microscopic world of photoinduced charge carrier behavior. By analyzing how THz pulses interact with a photoexcited material, we can extract rich information on fundamental material parameters—helping design better semiconductors, energy materials, and quantum devices.

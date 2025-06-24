@@ -8,6 +8,8 @@ bibliography:
 title: "How rare earths metals power our digital future, and the risks we
   must consider"
 ---
+*This article was written for the ComSciCon Canada conference, held in Hamilton, Ontario from June 26th to 29th, as part of a science communication project highlighting the role of rare earth elements in modern technology, and the risks associated with their extraction and supply As I learned more about the materials that make up the devices we use every day, I became increasingly interested by the hidden story behind these critical elements. It was this growing curiosity that inspired me to explore the topic in depth and share what I discovered in this article.*
+
 
 There is something incredibly small inside your laptop, your smartphone, and even the MRI machine at your local hospital that makes them all work. It's not just silicon or iron, but the rare earth elements. These metals, with bizarre names such as gadolinium (Gd), dysprosium (Dy), lanthanum (La), and lutetium (Lu), unknown to most people, are behind the operation of modern digital technologies and at the core of the renewable energy transition. From the magnets in wind turbines and electric vehicles to lanthanum-based alloys in nickel-metal hydride batteries, rare earth elements are essential to many technologies we rely on every day.
 

@@ -5,7 +5,6 @@ date: 2025-04-12
 category: post
 tags: [genetic-algorithms, optimization, computation]
 ---
-
 This week, I took a deeper dive into **genetic algorithms**, an optimization method inspired by natural evolution. These algorithms are especially powerful when the search space is large, complex, or poorly understood.
 
 Genetic algorithms (GAs) mimic the principles of **natural selection**: only the fittest individuals survive and pass on their traits to the next generation. Here's a breakdown of how they work:
