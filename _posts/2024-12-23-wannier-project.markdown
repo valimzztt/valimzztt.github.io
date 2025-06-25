@@ -47,7 +47,7 @@ derive the crystal field splitting. We then present results for two
 perovskite oxide, where we evaluate the effect of
 
 ## Crystal field splitting in octahedral complexes
-![Alt text](./figs_wannier/BandStructure_SrVO3.png)
+![Alt text](../assets/images/figs_wannier/BandStructure_SrVO3.png)
 
 Crystal field theory (CFT) describes the breaking of degeneracies of
 electron orbital states, usually $$d$$ or $$f$$ orbitals, due to a static
