@@ -44,37 +44,5 @@ Traditional finite difference or finite element methods integrate forward in tim
 
 ### 3. Continuous Interpolation
 
-Once trained, a PINN acts as a smooth function approximator. It can provide the solution at arbitrary points within the spatial and temporal domain without the need to interpolate between discrete mesh points, which is often a limitation in classical solvers.
-
----
-
-## Next Steps
-
-## Network Architecture
-
-The neural network I used is a fully connected feedforward model with the following configuration:
-
-- **Input layer:** 2 neurons (space and time)
-- **Hidden layers:** 3 layers
-  - Layer 1: 50 neurons, Tanh activation
-  - Layer 2: 50 neurons, Tanh activation
-  - Layer 3: 50 neurons, Tanh activation
-- **Output layer:** 1 neuron (solution \( u(x, t) \))
-
-```{python}
-
-
-self.linear_tanh_stack = nn.Sequential(
-    nn.Linear(2, 50),
-    nn.Tanh(),
-    nn.Linear(50, 50),
-    nn.Tanh(),
-    nn.Linear(50, 50),
-    nn.Tanh(),
-    nn.Linear(50, 1)
-)
-```
-
-Initially, I tried using leaky ReLU (sometimes humorously referred to as "sneaky ReLU") as the activation function, but it produced poor results for this problem—likely due to the lack of smoothness and periodicity required for wave-like solutions.
-
-Switching to Tanh improved the model's ability to approximate derivatives and match the true physical behavior of the wave equation.
+Once trained, a PINN acts as a smooth function approximator. It can provide the solution at arbitrary points within the spatial and temporal domain without the need to interpolate between discrete mesh points, which is often a limitation in classical solvers. 
+Stay tuned for more work on PINNs!
