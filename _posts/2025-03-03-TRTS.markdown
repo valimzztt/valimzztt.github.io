@@ -6,6 +6,15 @@ category: post
 ---
 
 ## Introduction
+This presentation is a way for me to showcase the core ideas and impact of my research in a way that’s as approachable as possible. First of all, my research is all about how light interacts with matter, a fundamental process that underpins technologies like solar cells, sensors, and LEDs.
+But not all light is the same. To understand the kind of light I work with, we need to start by looking at the electromagnetic spectrum — a map of all the different “types” of light that exist, from radio waves to X-rays.
+
+For a long time, a portion of the electromagnetic spectrum of light remained largely unexplored—we call it the terahertz (THz) gap. Lying between microwaves and infrared light, this gap existed because we lacked suitable sources and detectors to generate and detect light in this frequency range. As a result, we were blind to many processes happening at these frequencies.
+
+<img src="../assets/images/figs_thz/electromagnetic_spectrum.png" width="400">
+
+Recent advances in ultrafast laser physics have changed this, opening the field of THz spectroscopy, which uses electromagnetic fields in this frequency range to probe and control material properties. 
+What makes THz radiation particularly valuable is that its energy scale matches many fundamental low-energy processes in physical systems. For example, when light is absorbed by a material, its energy is transferred to negatively charged carriers, called electrons. Normally, electrons are tightly bound in the material. But when they absorb enough energy, they break free, can move around, and start to interact with their surroundings. Many of these interactions — especially those between electrons and lattice vibrations (phonons) — naturally occur at terahertz frequencies, making THz radiation the ideal probe to study them. This includes processes like carrier scattering, energy dissipation, and even polaron formation, where electrons become temporarily coupled to distortions in the atomic lattice. THz spectroscopy is thus perfectly suited to explore these subtle yet critical dynamics.
 
 Time-resolved terahertz spectroscopy (TRTS) is a powerful optical pump–THz probe technique used to study the ultrafast dynamics of charge carriers in materials. Unlike conventional electrical or optical probes, TRTS is sensitive to low-energy excitations in the far-infrared region (0.1–10 THz), making it uniquely suited for observing free carrier motion, polarons, excitons, and phonons on sub-picosecond timescales.
 
@@ -106,23 +115,9 @@ For CdTe, the fitting model included
 
 ---
 
-## 💡 Notes
+## Why does it matter?
+Because many of the technologies we rely on — from solar panels to energy-efficient LEDs — depend on how efficiently charge carriers move. If we understand the microscopic dynamics that limit this motion, we can design better materials and devices.
+In my research, I use TRTS to study semiconductors that are important for clean energy. One material I focus on is cadmium telluride (CdTe) — a leading thin-film photovoltaic material. By probing how electrons behave in CdTe after photoexcitation, I aim to understand what limits its efficiency at a microscopic level.
+I also study oxide materials like cerium dioxide (ceria), which are promising for photocatalysis — meaning they can help drive chemical reactions using light. These materials often have complex interactions between electrons and the lattice, and THz spectroscopy allows us to explore them on their natural timescales.
+The insights we gain from THz spectroscopy help guide the development of next-generation optoelectronic materials and devices — smarter, faster, and more sustainable technologies for the future.
 
-- The plasma frequency is related to the carrier density \( n \) as:
-
-\[
-\omega_p^2 = \frac{n e^2}{\varepsilon_0 m^*}
-\]
-
-- In reflection geometry, fitting may require solving the **Fresnel equations** for multilayer systems if substrates are involved.
-
-- For time-resolved experiments, repeat the fit as a function of pump–probe delay to track how carrier dynamics evolve in time.
-
----
-
-
-
-
-## Conclusion
-
-TRTS provides a non-contact, ultrafast window into the microscopic world of photoinduced charge carrier behavior. By analyzing how THz pulses interact with a photoexcited material, we can extract rich information on fundamental material parameters—helping design better semiconductors, energy materials, and quantum devices.
