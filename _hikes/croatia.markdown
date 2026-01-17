@@ -3,44 +3,35 @@ layout: default
 title: "Mount Dinara"
 date: 2024-08-20
 image: /assets/images/hikes/croatia.JPEG
-location: "Mount Dinara, Croatia"
-distance: "26 km"
-elevation: "540 m"
-duration: "5 hours"
-google_maps_link: "https://www.google.com/maps/place/Säntis"
-komoot_link: "https://www.komoot.com/smarttour/e1324739862/to-the-highest-peak-of-the-alpstein-spectacular-saentis-tour?ref=wdd"
+location: "Mount Dinara, Croatia" 
+distance: "15.7 km"
+elevation: "1237 m"
+duration: "7 hours"
+google_maps_link: https://maps.app.goo.gl/fzP3nfbz9bGPZyb96"
+komoot_link: "https://www.komoot.com/tour/1211859730"
 ---
 
 # Mount Dinara, Croatia 
 
 <div class="side-gallery">
-  <img src="/assets/images/hikes/santis-gallery/photo1.JPEG" alt="View 1">
+  <img src="/assets/images/hikes/" alt="View 1">
   <img src="/assets/images/hikes/santis-gallery/photo2.JPEG" alt="View 2">
   <img src="/assets/images/hikes/santis-gallery/photo3.JPEG" alt="View 3">
 </div>
 
-**Location:** Säntis, Switzerland  
-**Distance:** 14.4 km  
-**Elevation Gain:** 1,170 m                                               
-**Duration:** Approx. 8 hours
+**Location:** Dinara, Croatia
+**Distance:** 15.7 km  
+**Elevation Gain:** 1,237 m
+**Duration:** Approx. 7 hours
 
 ---
-
-On a sunny Saturday of July 2022, I decided to drive from Stuttart, Germany (where I was doing an internship) to Swizterland to do myfirst solo-hike. I decided for a scenic alpine hike starting near Schwägalp and ascending to the summit of Säntis, offering some of the most stunning panoramic views of the Appenzell Alps Ihave ever seen. The trail was beautiful and winded through pastures, rugged rocky outcrops, and breathtaking ridgelines. I need to say that it was a quite challenging hike, with a high ratioof elevation versus of kms. Also, the top of the Säntis can be achieved by using a cable car so you will not have a lot of piece once youhaveclimbed to the top. Nevertheless, this has been one of the most breathtaking hikes I have everndone, and it keeps a special space in my heart. 
+I was spending my time with a friend in Crotia, when we realized we both really fancied a hike. But are there any big mountains in Croatia? Croatia is not really known for its mountains and only few tourists visit the local mountains, which is a great pity. Croatian mountains are beautiful. The highest point of Croatia Dinara was named after the Dinaric Mountains, a 700-kilometer-long mountain range system that spans over almost all the countries of former Yugoslavia. The mountains are wonderful and offer amazing views. The hike to the highest point of Croatia isn’t an exception. To reach the peak isn’t a challenge technically but it can get very hot there so don’t forget to bring enough water, especially in the summer!
 
 ---
-
-
-
 
 ## Check out the hike!
--  [View on Google Maps](https://www.google.com/maps/place/Säntis)
--  [View full trail on Komoot](https://www.komoot.com/tour/12345678)
-
----
-
-
-
+-  [View on Google Maps](https://maps.app.goo.gl/fzP3nfbz9bGPZyb96)
+-  [View full trail on Komoot](https://www.komoot.com/tour/1211859730)
 
 <style>
 

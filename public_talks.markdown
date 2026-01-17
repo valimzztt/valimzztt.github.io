@@ -3,8 +3,8 @@ layout: page
 title: Public Talks
 permalink: /outreach/public_talks/
 ---
-
-Here is a list of public talks I organized as part of the McGill Physics Outreach series:
+As the Public Talks Coordinator of the Physics Department, I had the chance to organize the monthly Public Talks, aimed at a general audience. This has been an extraordinary opportunity to connect students, general public and professors, as well as broaden my own knowledge and network!
+I leave below a ist of public talks I organized, which are part of the McGill Physics Outreach series:
 
 <ul class="talk-list">
   {% for talk in site.data.public_talks %}
