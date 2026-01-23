@@ -37,11 +37,6 @@ permalink: /cv/
       </div>
     </section>
 
-    <section id="profile" class="cv-card">
-      <h2>{{ site.data.cv['career-profile'].title }}</h2>
-      <p>{{ site.data.cv['career-profile'].summary | markdownify }}</p>
-    </section>
-
     <section id="work" class="cv-card">
       <h2>{{ site.data.cv.experiences.title }}</h2>
       {% for exp in site.data.cv.experiences.info %}
@@ -64,7 +59,7 @@ permalink: /cv/
             <span class="date-badge">{{ edu.time }}</span>
             <span class="entry-role">{{ edu.degree }}</span>
           </div>
-          <div class="entry-location">🎓 {{ edu.university }}</div>
+          <div class="entry-location"> {{ edu.university }}</div>
           <p>{{ edu.details | markdownify }}</p>
         </div>
       {% endfor %}
@@ -101,6 +96,10 @@ permalink: /cv/
           </li>
         {% endfor %}
       </ul>
+    </section>
+
+    <section id="profile" class="cv-card">
+      <p>{{ site.data.cv['career-profile'].summary | markdownify }}</p>
     </section>
 
   </main>
