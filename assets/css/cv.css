@@ -1,65 +1,145 @@
-.cv-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 0rem;
-  }
 
+/* Layout Container */
+/* Layout Container */
+.cv-container {
+  /* 1. Ensure it uses the full width of the screen */
+  max-width: 100%; 
+  
+  /* 2. Reduce side padding (was 20px) */
+  padding: 40px 10px; 
+  
+  display: grid;
+  
+  /* 3. Shrink the sidebar width (was 250px) to give more room to the content */
+  grid-template-columns: 180px 1fr; 
+  
+  /* 4. Reduce the empty space between sidebar and card (was 60px) */
+  gap: 30px; 
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+}
 
-  .cv-avatar {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin-bottom: 1rem;
+/* Sidebar Navigation */
+.cv-sidebar {
+  position: sticky;
+  top: 40px; /* Stays visible when scrolling */
+  height: fit-content;
+}
+
+.cv-nav-link {
+  display: block;
+  padding: 8px 0;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.cv-nav-link:hover {
+  color: #5ea88e; /* Match the green accent */
+}
+
+/* Main Content Area */
+.cv-main h1 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.cv-intro {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* The "Card" Style */
+.cv-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.08); /* Soft shadow */
+  padding: 40px;
+  margin-bottom: 30px;
+  border: 1px solid #eaeaea;
+}
+
+.cv-card h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 30px;
+  border-bottom: none; /* Removing default Jekyll underlines if present */
+}
+
+/* Personal Info Grid (Inside the first card) */
+.info-grid {
+  display: grid;
+  grid-template-columns: 120px 1fr; /* Label vs Value */
+  gap: 15px 20px;
+  align-items: baseline;
+}
+
+.info-label {
+  font-weight: 700;
+  color: #000;
+}
+
+.info-value {
+  color: #444;
+}
+
+.info-value.highlight {
+  color: #5ea88e; /* Green accent for emails/phones */
+}
+
+/* Entry Styling (Work/Education) */
+.entry {
+  margin-bottom: 30px;
+}
+
+.entry-header {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.date-badge {
+  background-color: #5ea88e;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.entry-role {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #2c7a63;
+}
+
+.entry-location {
+  color: #666;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .cv-container {
+    grid-template-columns: 1fr; /* Stack vertically on mobile */
   }
-  
-  .cv-main {
-    flex-grow: 1;
-    padding: 2rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  
-  .cv-main h2 {
-    border-bottom: 2px solid #eee;
-    margin-top: 2rem;
-  }
-  
-  .entry .dates {
-    float: right;
-    color: #888;
-    font-size: 0.85em;
-  }
-  
-  .summary-section {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-left: 5px solid #3b6978;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  }
-  
-  .summary-section .section-title {
-    font-size: 1.5rem;
-    color: #3b6978;
-    margin-bottom: 1rem;
+  .cv-sidebar {
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    gap: 15px;
+    overflow-x: auto; /* Scroll horizontal if links overflow */
   }
-  
-  .summary-section .section-title .fa-stack {
-    font-size: 0.8rem;
-    color: #3b6978;
-  }
-  
-  .summary-section .summary {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.7;
-  }
-  
+}
