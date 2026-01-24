@@ -6,7 +6,7 @@
   max-width: 100%; 
   
   /* 2. Reduce side padding (was 20px) */
-  padding: 40px 10px; 
+  padding: 0px 10px; 
   
   display: grid;
   
@@ -90,7 +90,7 @@
 }
 
 .info-value.highlight {
-  color: #5ea88e; /* Green accent for emails/phones */
+  color: #2b76df; /* Green accent for emails/phones */
 }
 
 /* Entry Styling (Work/Education) */

@@ -9,12 +9,21 @@ elevation: "540 m"
 duration: "5 hours"
 google_maps_link: "https://www.google.com/maps/place/Säntis"
 komoot_link: "https://www.komoot.com/smarttour/e1324739862/to-the-highest-peak-of-the-alpstein-spectacular-saentis-tour?ref=wdd"
+gallery:
+  - src: /assets/images/hikes/mount-ham/ham1.jpg
+    alt: "View of the trail"
+  - src: /assets/images/hikes/mount-ham/ham2.jpg
+    alt: "Summit view"
+  - src: /assets/images/hikes/mount-ham/ham3.jpg
+    alt: "Landscape"
+  - src: /assets/images/hikes/mount-ham/ham4.jpg
+    alt: "Landscape"
 ---
 <div class="side-gallery">
-  <img src="/assets/images/hikes/santis-gallery/photo1.JPEG" alt="View 1">
-  <img src="/assets/images/hikes/santis-gallery/photo2.JPEG" alt="View 2">
-  <img src="/assets/images/hikes/santis-gallery/photo3.JPEG" alt="View 3">
-</div>
+  {% for photo in page.gallery %}
+    <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt }}" class="gallery-img">
+  {% endfor %}
+</div>  
 
 **Location:** Mount Ham, Québec 
 **Distance:** 6 km  

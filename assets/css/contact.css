@@ -1,0 +1,90 @@
+/* --- Contact Page Styles --- */
+
+/* 1. Centered Container (narrower than CV for focus) */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* 2. The White Card Wrapper */
+  .contact-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08); /* Consistent shadow */
+    padding: 50px;
+    border: 1px solid #eaeaea;
+  }
+  
+  /* 3. Typography */
+  .contact-header h1 {
+    font-weight: 200;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+  }
+  
+  /* 4. Form Elements */
+  .contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+    margin-top: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+    background: #f9f9f9;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #5ea88e; /* Your Green Accent */
+    box-shadow: 0 0 0 3px rgba(94, 168, 142, 0.1);
+    background: #fff;
+  }
+  
+  /* 5. The Button */
+  .contact-form button {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #5ea88e; /* Your Green Accent */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #4e8f78; /* Slightly darker green */
+  }
+  
+  .contact-form button:active {
+    transform: scale(0.98);
+  }

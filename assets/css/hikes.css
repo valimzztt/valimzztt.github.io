@@ -1,0 +1,184 @@
+/* --- Hero Section (Immersive) --- */
+.hike-hero {
+    width: 100%;
+    height: 60vh; /* Takes up 60% of the screen height */
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: -60px; /* Pulls the content up slightly for overlap effect */
+    z-index: 1;
+  }
+  
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+  
+  .hero-meta {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.9;
+  }
+  
+  /* --- Layout Container --- */
+  .hike-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 60px 20px;
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Story takes left, Sidebar takes right */
+    gap: 40px;
+    position: relative;
+    z-index: 2; /* Ensures content sits ON TOP of the hero image */
+  }
+  
+  /* --- Cards --- */
+  .hike-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Nicer, deeper shadow */
+    padding: 40px;
+    border: 1px solid #f0f0f0;
+  }
+  
+  /* --- Sidebar Stats Styling --- */
+  .hike-sidebar {
+    position: sticky;
+    top: 40px;
+    height: fit-content;
+  }
+  
+  .stats-card h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #5ea88e; /* Green underline */
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .stat-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .stat-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    background: #f4fbf8;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .stat-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stat-info .label {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .stat-info .value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  /* --- Buttons --- */
+  .hike-actions {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .hike-btn {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  
+  .btn-primary {
+    background: #5ea88e;
+    color: white;
+    box-shadow: 0 4px 15px rgba(94, 168, 142, 0.3);
+  }
+  .btn-primary:hover {
+    background: #4e8f78;
+    transform: translateY(-2px);
+  }
+  
+  .btn-outline {
+    border: 1px solid #ddd;
+    color: #555;
+  }
+  .btn-outline:hover {
+    border-color: #5ea88e;
+    color: #5ea88e;
+  }
+  
+  /* --- Gallery Grid --- */
+  .hike-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .gallery-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 850px) {
+    .hike-container {
+      grid-template-columns: 1fr; /* Stack everything */
+    }
+    .hike-hero {
+      height: 40vh; /* Shorter hero on phone */
+    }
+    .hike-sidebar {
+      order: -1; /* Puts stats ABOVE story on mobile (optional) */
+    }
+  }

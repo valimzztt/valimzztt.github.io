@@ -3,125 +3,133 @@ layout: default
 title: "Outreach Activities"
 permalink: /outreach/
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=2.0">
-  {{ site.head }}
-</head>
 
-<body>
-  <header class="hero">
-    <div class="hero-inner">
-      <h1>{{ page.title }}</h1>
-      <p>{{ page.description }}</p>
-      {% if page.button_text and page.button_link %}
-        <a href="{{ page.button_link }}" class="button">{{ page.button_text }}</a>
-      {% endif %}
-    </div>
-  </header>
-  <p>&nbsp;</p>
-<section class="outreach-intro">
-    <div class="container">
-      <p>
-        Engaging with the community and sharing scientific knowledge has probably been one of the most rewarding aspects of my academic journey. 
+<link rel="stylesheet" href="{{ '/assets/css/cv.css' | relative_url }}">
+
+<div class="outreach-container">
+
+  <header class="outreach-header">
+    <h1>{{ page.title }}</h1>
+    
+    <p>
+      Engaging with the community and sharing scientific knowledge has probably been one of the most rewarding aspects of my academic journey.
+
         During my time at McGill, I have been actively involved in various outreach initiatives aimed at making science accessible and exciting for people of all ages and backgrounds, I wanted to share some of these experiences with you.
-        You can also find more about my outreach activities and in general about McGill Physics Outreach <a href="https://physics-tsi-outreach.physics.mcgill.ca/">here</a>.
-      </p>
-    </div>
-  </section>
 
-  <section class="grid-section">
+        You can also find more about my outreach activities and in general about McGill Physics Outreach <a href="https://physics-tsi-outreach.physics.mcgill.ca/">here</a>.
+    </p>
+  </header>
+
+  <div class="outreach-grid">
     {% for item in site.data.activities %}
-      <a href="{{ item.url | relative_url }}" class="grid-item" style="background-image: url('{{ item.image }}');">
-        <div class="overlay">
+      <a href="{{ item.url | relative_url }}" class="activity-card">
+        
+        <div class="activity-image" style="background-image: url('{{ item.image | relative_url }}');"></div>
+        
+        <div class="activity-content">
           <h2>{{ item.title }}</h2>
-          <p>{{ item.description }}</p>
+          <p>{{ item.description | truncate: 120 }}</p> <span class="read-more">Learn more</span>
         </div>
+        
       </a>
     {% endfor %}
-  </section>
+  </div>
 
-  {% include footer.html %}
-</body>
+</div>
 
 <style>
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/images/outreach_banner.png') center/cover;
-  color: #fff;
+.outreach-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+/* 2. The Hero Section (Clean & Minimal) */
+.outreach-header {
+  margin-bottom: 40px;
   text-align: center;
-  padding: 5rem 1rem;
-  width: 100%;
-  margin: 0;
 }
 
-.hero h1 {
-  color: #fff;
+.outreach-header h1 {
+  font-weight: 200;
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
+  color: #333;
 }
 
-.hero p {
-    color: #ddd;
-  font-size: 1.2rem;
-  max-width: 900px;
-  margin: auto;
+.outreach-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
-.button {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.75rem 2rem;
-  border: 1px solid #fff;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.button:hover {
-  background: #fff;
-  color: #9f9f9f;
-}
-
-
-.grid-section {
+/* 3. The Grid Layout */
+.outreach-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem 1rem;
-  width: 100%;
-  margin: 0;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 30px; /* Space between cards */
 }
 
+/* 4. The "Modern" Card Style */
+.activity-card {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.08); /* Matches your CV shadow */
+  overflow: hidden; /* Ensures image corners stay rounded */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none; /* Removes underline from the whole card link */
+  display: flex;
+  flex-direction: column;
+}
 
-.grid-item {
+.activity-card:hover {
+  transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Image Area */
+.activity-image {
+  height: 200px;
+  width: 100%;
   background-size: cover;
   background-position: center;
-  height: 300px;
-  width: 100%;
-  color: #ffffff;
-  text-decoration: none;
-  position: relative;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Text Content Area */
+.activity-content {
+  padding: 25px;
+  flex-grow: 1; /* Pushes content to fill height */
   display: flex;
-  align-items: flex-end;
-  border-radius: 4px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.grid-item * {
-  color: #fff !important;
+  flex-direction: column;
 }
 
-.grid-item:hover {
-  transform: scale(1.03);
+.activity-content h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #333;
 }
 
-.overlay {
-  background: rgba(3, 3, 3, 0.55);
-  width: 100%;
-  padding: 1rem;
+.activity-content p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  flex-grow: 1;
+}
+
+/* The "Read More" fake button */
+.read-more {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #5ea88e; /* Your green accent color */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 </style>
