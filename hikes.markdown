@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Hiking"
-permalink: /hobbies/
+permalink: /hikes/
 hero_image: /assets/images/hikes/aosta.JPEG
 ---
 <link rel="stylesheet" href="{{ './assets/css/style.css' | relative_url }}">
