@@ -1,27 +1,14 @@
 ---
-
 layout: default
-
 title: "Mount Dinara"
-
 date: 2024-08-20
-
 image: /assets/images/hikes/croatia.JPEG
-
 location: "Mount Dinara, Croatia"
-
 distance: "15.7 km"
-
 elevation: "1237 m"
-
 duration: "7 hours"
-
 google_maps_link: "https://maps.app.goo.gl/fzP3nfbz9bGPZyb96"
-
 komoot_link: "https://www.komoot.com/tour/1211859730"
-
-
-
 gallery:
 
   - src: /assets/images/hikes/croatia/croatia1.jpg
@@ -39,7 +26,6 @@ gallery:
   - src: /assets/images/hikes/croatia/croatia4.jpg
 
     alt: "Landscape"
-
 ---
 
 
@@ -434,8 +420,6 @@ gallery:
 
 }
 
-
-
 .hero-date {
 
   margin: 5px 0 0 0;
@@ -445,8 +429,6 @@ gallery:
   font-size: 1rem;
 
 }
-
-
 
 .content-card p {
 

@@ -20,16 +20,15 @@ sidebar:
       title: Languages
       info:
         - idiom: English
-          level: Proficient
+          level: Proficient (C2)
         - idiom: German
           level: Native
         - idiom: Italian
           level: Native
         - idiom: French
-          level: Advanced
-
-        - idiom: Spanish
-          level: Intermediate
+          level: Advanced (C1)
+        - idiom: Mandarin
+          level: Beginner
 
     interests:
       title: Interests
@@ -55,6 +54,7 @@ education:
         university: McGill University
         time: 2024 - 2026
         details: |
+          - Relevant coursework: Nonlinear Optics, Advanced Quantum Mechanics, Solid State Physics, Statistical Mechanics
 
       - degree: BSc (Honours) in Computer Science and Physics 
         university: University of British Columbia (UBC)

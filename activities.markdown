@@ -43,7 +43,7 @@ permalink: /outreach/activities/
 /* 1. Container - Controls the overall width */
 .activity-container {
   max-width: 100%; /* Stretches to full width */
-  padding: 20px;
+  padding: 10px;
   margin: 0 auto;
 }
 
@@ -72,7 +72,8 @@ permalink: /outreach/activities/
 
 /* 3. Image Styling */
 .activity-image-wrapper {
-  flex: 0 0 250px; /* Fixed width for image column */
+  flex: 0 1 350px; /* allow shrink */
+  max-width: 350px;
   border-right: 1px solid #eaeaea;
 }
 
