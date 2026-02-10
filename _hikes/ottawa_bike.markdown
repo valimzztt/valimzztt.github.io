@@ -6,6 +6,17 @@ image: /assets/images/hikes/ottawa_bike/header.JPEG
 location: "Montréal-Ottawa"
 distance: "210 km"
 duration: "2 days"
+google_maps_link: "https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d481648.390604931!2d-74.61331038463611!3d45.52150422308185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e1!4m3!3m2!1d45.5127521!2d-73.56629099999999!4m5!1s0x4cceeb81480dd781%3A0x5faf289251a90419!2sVankleek%20Hill%2C%20Ontario!3m2!1d45.5196512!2d-74.6522016!4m5!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!3m2!1d45.420057199999995!2d-75.7003397!5e1!3m2!1sen!2sca!4v1750803885877!5m2!1sen!2sca"
+komoot_link: "https://www.komoot.com/tour/1211859730"
+gallery:
+  - src: /assets/images/hikes/ottawa_bike/image7.JPEG
+    alt: "View of the trail"
+  - src: /assets/images/hikes/ottawa_bike/image7.JPEG
+    alt: "Summit view"
+  - src: /assets/images/hikes/ottawa_bike/image7.JPEG
+    alt: "Landscape"
+  - src: /assets/images/hikes/ottawa_bike/image7.JPEG
+    alt: "Landscape"
 ---
 
 

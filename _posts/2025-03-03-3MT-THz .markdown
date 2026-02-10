@@ -1,0 +1,48 @@
+---
+layout: post
+title: 3-Minute-Thesis Competition
+date: 2025-04-12
+category: post
+author: Valentina Mazzotti
+description: "My experience condensing years of research into 3 minutes for the McGill 3MT competition."
+---
+
+### What Can We Learn from Time-Resolved Terahertz Spectroscopy?
+
+On March 18, 2025, I had the chance to take part in the McGill 3-Minute Thesis (3MT) Competition. In this competition, graduate students (like me!) have the chance to showcase their research before a live audience. With only three minutes and a single slide, I had to engage my audience and convey the complexities of my work to a diverse, non-expert audience.
+
+I didn't win a prize, but the event represented an incredible opportunity for me to boil down the research questions of my own work to a few key statements and to really think about the impact and importance of my work. I think that engaging in these kinds of activities is extremely important so that one does not lose the big picture and the connection to how their own research connects with the society around us.
+
+
+Below is the single slide I used to illustrate the "Terahertz Gap" and my research method:
+
+![Time-Resolved Terahertz Spectroscopy Slide](/assets/images/figs_thz/THz_spectroscopy.jpg){: .img-fluid .rounded .shadow }
+*Fig 1. The visual aid accompanying my presentation.*
+
+---
+
+### Transcript of the 3-Minute-Thesis Competition talk
+
+> **For a long time, a portion of the electromagnetic spectrum of light remained largely unexplored—we call it the terahertz (THz) gap.**
+>
+> Lying between microwaves and infrared light, this gap was there because generating and detecting THz radiation was extremely challenging due to the lack of suitable sources and detectors, leaving a blind spot in our ability to probe fundamental processes in materials that happen at exactly that energy scale. This gap existed because we were lacking suitable sources and detectors to generate and detect light in that frequency range, leaving a blind spot in our ability to probe various fundamental processes in materials.
+>
+> Advances in ultrafast laser physics in recent years have, however, unlocked the ability to generate and detect THz radiation, opening the door to discovering new physics. We refer to THz spectroscopy as to a technique that allows us to probe and control material properties using electromagnetic fields in the THz frequency range.
+>
+> **What makes radiation in this frequency range so valuable?**
+>
+> Its energy scale matches that of many important electronic excitations, making it an ideal non-contact electrical probe to investigate low-energy processes in condensed matter systems. To give you an example of such process: when materials absorb light, electrons are excited, move, and interact with their surroundings via phenomena that match the energy of THz electromagnetic radiation, meaning that the latter is perfect to investigate those.
+>
+> However, the dynamics of these phenomena usually happen on ultrafast timescale, and this is where **Time-resolved THz spectroscopy (TRTS)** comes at play, offering non-contact electrical probe to resolve these phenomena with exceptional time resolution.
+
+
+
+> **How can we achieve this experimentally?**
+>
+> Here is how the technique I am using in my own research works: First, we shine an ultrafast femtosecond laser pulse onto the material, exciting charge carriers and inducing transient changes in the electronic and structural properties of the material. This clearly modifies the way the material absorbs and interacts with THz radiation, meaning that we can then send a terahertz probe pulse through the sample, with the transmitted THz beam carrying crucial information about what changed in the material due to the excitation of the pump pulse.
+>
+> By varying the time delay between these two pulses and analyzing the transmitted THz signal, we can reconstruct how the electronic landscape evolves upon photo excitation. You can think of this as an ultrafast camera that captures electron dynamics on timescales of trillionths of a second—faster than half a billionth of a blink of an eye!
+>
+> **Why does this matter?**
+>
+> Many of the technologies we rely on—solar panels, energy-efficient LEDs, and high-speed electronics—depend on how efficiently charge carriers move within a material and what inside the material limits their motion. The insights gained from Time-resolved THz spectroscopy allow us to better understand charge carrier transport upon photo-excitation and guide the design of new optoelectronic devices.

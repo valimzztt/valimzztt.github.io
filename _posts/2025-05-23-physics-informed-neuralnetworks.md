@@ -14,13 +14,9 @@ The goal of a PINN is not to classify or regress from examples but to solve a pa
 
 ---
 
-## Solving the 1D Wave Equation
+## Solving the 1D Hydrogen Atom
 
-As a first experiment, I implemented a PINN to solve the 1D wave equation:
 
-$$ 
-\frac{\partial^2 u}{\partial t^2} = c^2 \frac{\partial^2 u}{\partial x^2}
-$$ 
 
 with initial condition $$u(x, 0) = \frac{1}{2} \sin(2\pi x)$$, and zero initial time derivative. The boundary conditions were Dirichlet (\( u(0, t) = u(1, t) = 0 \)).
 
@@ -28,21 +24,9 @@ I used a fully connected feedforward neural network with three hidden layers. In
 
 Switching to **Tanh** activations improved the performance significantly. The Tanh nonlinearity better captured the smooth, sinusoidal nature of the solution and allowed the network to approximate second derivatives more accurately.
 
----
+## The 3D Hydrogen Atom
 
-## Why Use a PINN?
+## The 3D H2+ Hydrogen Atom 
 
-Even though this particular PDE has a known analytical solution, using a PINN here serves to demonstrate a few key advantages:
 
-### 1. Generalizability to Non-Analytical Systems
-
-Many physically relevant PDEs do not have closed-form solutions. In such cases, PINNs can approximate solutions while maintaining consistency with known physical laws.
-
-### 2. Error Accumulation in Numerical Methods
-
-Traditional finite difference or finite element methods integrate forward in time and accumulate discretization errors. By contrast, PINNs **learn the entire solution domain simultaneously**, minimizing a global loss function that reflects the PDE and boundary conditions throughout the domain. This can lead to more stable solutions, particularly over long time intervals.
-
-### 3. Continuous Interpolation
-
-Once trained, a PINN acts as a smooth function approximator. It can provide the solution at arbitrary points within the spatial and temporal domain without the need to interpolate between discrete mesh points, which is often a limitation in classical solvers. 
-Stay tuned for more work on PINNs!
+## What about multi-electron systems? 
