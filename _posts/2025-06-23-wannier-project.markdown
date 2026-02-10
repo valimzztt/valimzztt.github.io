@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Building Maximally Localized Wannier Functions"
-date:   2024-12-23 20:44:51 +0100
+date:   2025-12-23 20:44:51 +0100
 layout: default
 title:    Calculating Crystal Field Splitting via Wannier Functions
-categories: post
+categories: [projects]
 author: Valentina Mazzotti
 ---
 # Introduction
@@ -181,60 +181,49 @@ $$
 where each $$\epsilon$$ represents the on-site energy obtained from the
 Wannier-based TB Hamiltonian.
 
-## 
-
-We apply the workflow to derive the crystal field splitting in , a cubic
-perovskite where V is in the $4+$ oxidation state with a $3d^1$
-configuration. This single $d$-electron experiences octahedral crystal
-field splitting into lower-energy $t_{2g}$ and higher-energy $e_g$
+We apply the workflow to derive the crystal field splitting in VO2, a cubic
+perovskite where V is in the $$4+$$oxidation state with a$$3d^1$$
+configuration. This single $$d$$-electron experiences octahedral crystal
+field splitting into lower-energy $$t_{2g}$$and higher-energy$$e_g$$
 orbitals due to interactions with the surrounding oxygen ligands. The
-band structure of
-(Fig. [2](#fig:SrVO3-bandstructure){reference-type="ref"
-reference="fig:SrVO3-bandstructure"}) reveals distinct groups of bands
-corresponding to V-$d$ ($t_{2g}$ and $e_g$) and O-$p$ orbital
+band structure of (Fig. 2) reveals distinct groups of bands
+corresponding to V-$$d$$($$t_{2g}$$ and$$e_g$$) and O-$$p$$ orbital
 characters, enabling an initial estimate of the crystal field splitting
-at approximately $2 \, \text{eV}$.
+at approximately $$2 \, \text{eV}$$.
 
 To quantify this numerically, we first construct MLWFs for only the
-$d$-orbital bands, confined to $4 \, \text{eV}$ to $11 \, \text{eV}$
+$$d$$-orbital bands, confined to $$4 \, \text{eV}$$to$$11 \, \text{eV}$$
 relative to the Fermi energy. This model captures the full crystal field
-splitting of the V-$d$ states in . Next, we include the $p$-orbitals of
-oxygen, expanding the energy range to $-2 \, \text{eV}$ to
-$11 \, \text{eV}$. By constructing a tight-binding model that includes
-both V-$d$ and O-$p$ orbitals, we observe that the Wannier functions
+splitting of the V-$$d$$states in VO2. Next, we include the$$p$$-orbitals of
+oxygen, expanding the energy range to $$-2 \, \text{eV}$$ to
+$$11 \, \text{eV}$$. By constructing a tight-binding model that includes
+both V-$$d$$ and O-$$p$$ orbitals, we observe that the Wannier functions
 (WFs) centered on vanadium become significantly less extended, as seen
-in Table [5](#table:wannier-centers-SrVO3-2){reference-type="ref"
-reference="table:wannier-centers-SrVO3-2"} in the Appenidx. The bonding
-and anti-bonding nature of the V-$t_{2g}$ and O-$2p$ bands explains the
+in Table 5 in the Appendix. The bonding
+and anti-bonding nature of the V-$$t_{2g}$$ and O-$$2p$$ bands explains the
 localization trends. WFs from only anti-bonding bands are more extended
-due to retained O-$p$ character, as indicated by larger spreads
-(Table [4](#table:wannier-centers-SrVO3){reference-type="ref"
-reference="table:wannier-centers-SrVO3"}). However, if we expand the
+due to retained O-$$p$$ character, as indicated by larger spreads
+(Table 4). However, if we expand the
 energy window to include both bonding and anti-bonding bands (and
 therefore increase the energy range and the number of WFs used in the
 tight binding model), the resulting WFs resemble atomic-like V and O
-functions more closely, and are therefore more localized. Athough there
-remains a small V-$d_{xy}$ component on the O sites to maintain
+functions more closely, and are therefore more localized. Although there
+remains a small V-$$d_{xy}$$ component on the O sites to maintain
 orthogonality among WFs, this component is considerably reduced compared
 to when only the anti-bonding band is used. For both sets, we record the
-on-site energies of the -centered $d$-like Wannier functions, which are
-tabulated in Table
-[3](#table:SrVO3-onsite-energies){reference-type="ref"
-reference="table:SrVO3-onsite-energies"}. The crystal field splitting is
-then obtained as the difference of the mean V-$e_g$-like and
-V-$t_{2g}$-like Wannier function. When comparing the splitting of the
-on-site energies between the V-$e_g$-like and V-$t_{2g}$-like Wannier
-functions for the two sets (see Table
-[1](#table:splitting-SrVO3){reference-type="ref"
-reference="table:splitting-SrVO3"}), it is evident that this splitting
-is reduced by approximately 1 eV in the second set compared to the
+on-site energies of the V-centered $$d$$-like Wannier functions, which are
+tabulated in Table 3. The crystal field splitting is
+then obtained as the difference of the mean V-$$e_g$$-like and
+V-$$t_{2g}$$-like Wannier function. When comparing the splitting of the
+on-site energies between the V-$$e_g$$-like and V-$$t_{2g}$$-like Wannier
+functions for the two sets (see Table 1), it is evident that this splitting
+is reduced by approximately $$1 \, \text{eV}$$ in the second set compared to the
 first. This reduction can be attributed to hybridization between the
-central V-$d$ orbitals and the $p$-orbitals of the surrounding oxygen
+central V-$$d$$orbitals and the$$p$$-orbitals of the surrounding oxygen
 ligands. In the first set, as previously mentioned, hybridization
-between the central V-$d$ orbitals and the $p$-orbitals of the
-surrounding oxygen ligands enforces significant O-$p$ character on the
+between the central V-$$d$$orbitals and the$$p$$-orbitals of the
+surrounding oxygen ligands enforces significant O-$$p$$ character on the
 V-centered Wannier functions, which contributes to and increases the
 crystal field splitting value.
-
 
 {% bibliography --cited %}

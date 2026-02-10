@@ -4,7 +4,6 @@ title: "Generating Third-Harmonic Light from a Femtosecond Ti:Sapphire Laser"
 date: 2025-04-28
 categories: [Lab Diaries]
 author: Valentina Mazzotti
-tags: [nonlinear optics, THG, femtosecond, UV, laser]
 ---
 
 ## Generating Third-Harmonic Light from a Femtosecond Ti:Sapphire Laser
@@ -26,9 +25,9 @@ Although THG is formally a third-order ($$ \chi^{(3)} $$) process, in practice i
 
 ## Building the Setup
 
-I used the pre-aligned THG kit from **EKSMA Optics**, which includes two BBO crystals and a series of elements tailored for cascaded frequency conversion. The first BBO crystal is responsible for second-harmonic generation (SHG). Rotating it gradually, I monitored the output with a spectrometer and a color card — eventually spotting the violet hue characteristic of 400 nm light. That part was relatively smooth.
+I used the pre-aligned THG kit from EKSMA Optics, which includes two BBO crystals and a series of elements tailored for cascaded frequency conversion. The first BBO crystal is responsible for second-harmonic generation (SHG). Rotating it gradually, I monitored the output with a spectrometer and a color card — eventually spotting the violet hue characteristic of 400 nm light. That part was relatively smooth.
 
-The next step was much trickier. Because the 800 nm and 400 nm pulses travel at different group velocities, they quickly slip out of sync inside the second BBO crystal. To compensate for this **temporal walk-off**, I introduced a calcite delay plate into the 800 nm beam path. It sounds simple enough, but achieving overlap requires minute tilt adjustments and a lot of patience. 
+The next step was much trickier. Because the 800 nm and 400 nm pulses travel at different group velocities, they quickly slip out of sync inside the second BBO crystal. To compensate for this temporal walk-off, I introduced a calcite delay plate into the 800 nm beam path. It sounds simple enough, but achieving overlap requires minute tilt adjustments and a lot of patience. 
 
 After the delay compensation, I added a dual-wavelength waveplate to match the polarizations of the 800 nm and 400 nm beams. For Type I phase matching in BBO, both beams must be polarized along the same axis — in our case, horizontally. Following this, the combined beams were directed into the second BBO crystal for sum-frequency generation. Once again, tuning the angle of this crystal was critical for achieving phase matching.
 
@@ -37,9 +36,5 @@ To analyze the output, I placed a dispersive prism after the THG kit, which allo
 After observing the first hint of UV, I went back and fine-tuned the angles of the first BBO crystal and the calcite delay plate. These small adjustments significantly improved the temporal overlap and phase-matching conditions. Eventually, a strong and stable UV spot at 266 nm emerged on the fluorescence card, and a corresponding peak was confirmed using the spectrometer.
 
 While the setup was now stable and reproducible, the output power remained relatively low. With 700 mW of input power at 800 nm, I was only able to extract about 5.5 µW of UV output — corresponding to a conversion efficiency of roughly 0.7%. This is somewhat lower than expected, suggesting that additional optimization (perhaps in focusing conditions, crystal quality, or beam walk-off compensation) could further improve performance.
-
----
-
-## Challenges Along the Way
 
 Getting there wasn’t straightforward. The UV wouldn’t show up at first — and with so many dependencies (temporal overlap, polarization alignment, crystal phase matching), it was hard to know where the problem was. I had to go through everything multiple times: resetting the delay plate, tweaking the crystal tilt, rotating the waveplate back and forth. Eventually, I realized that even tiny misalignments — like a half-degree in the BBO or a subtle shift in beam overlap — were enough to ruin the process. 

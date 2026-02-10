@@ -10,6 +10,13 @@ This past September, I had the incredible opportunity to represent McGill’s Ph
 
 Alongside my colleague Catherine Boisvert, and in collaboration with the Redpath Museum’s Education Team, we worked with 120 students aged 10–14. We led hands-on physics activities, from designing parachutes and building electrochemical potato batteries to constructing electric motors and compasses to explore Earth’s magnetic field. 
 Each activity was designed not only to demonstrate physical principles, such as air resistance buoyancy, and Lorentz forces, but also to give students the opportunity to form hypotheses, test their own designs, identify sources of error, and iteratively refine their experiments. And their curiosity, creativity, and enthusiasm really made this an unforgettable experience.
+<div class="photo-grid-container">
+<div class="photo-grid">
+    <img src="/assets/images/figs_barbados/Electricmotor.jpg" class="grid-image">
+    <img src="/assets/images/figs_barbados/PotatoLamp3.jpg" class="grid-image">
+    <img src="/assets/images/figs_barbados/Redpath1.jpg" alt="Group activity" class="grid-image">
+    </div>
+</div>
 
 In the morning, we started with two activities designed for younger students: the Parachute Challenge and the Potato Lamp Experiment.
 In the Parachute Challenge, students worked in small teams to design and build miniature parachutes using everyday materials such as paper, string, plastic bags, and tape. The goal was to safely land a small object (in our case, marbles) from a set height while maximizing air resistance and minimizing impact speed. The session was highly hands-on: students experimented with different canopy shapes and sizes, observed the effects, and iteratively improved their designs. Through this process, they were introduced to the basic physics concepts of air resistance, gravity, and terminal velocity.
@@ -22,10 +29,53 @@ The Build a Simple Compass activity introduced students to the concept of magnet
 I can definitely say that Physics Outreach has been the highlight of my journey in physics. Seeing students light up when a motor finally started or when their parachute design worked reminded me of what first drew me to physics: the joy of discovery, especially when science becomes something you can test, troubleshoot and make your own.
 
 <div class="photo-grid-container">
-<h3>Some pictures we took during the workshop</h3>
 <div class="photo-grid">
-    <img src="/assets/images/figs_barbados/GroupOrganizers.jpg alt="Workshop session" class="grid-image">
+    <img src="/assets/images/figs_barbados/GroupOrganizers.jpg" class="grid-image">
     <img src="/assets/images/figs_barbados/ParachuteExplaining.jpg" class="grid-image">
     <img src="/assets/images/figs_barbados/Parachute1.jpg" alt="Group activity" class="grid-image">
     </div>
 </div>
+
+
+<style>
+  /* Photo Grid Styling */
+  .photo-grid-container h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+  }
+
+  .photo-grid {
+    display: grid;
+    /* Creates 3 columns on big screens, auto-adjusts on smaller ones */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .grid-image {
+    width: 100%;
+    height: 200px; /* Fixed height for uniform look */
+    object-fit: cover; /* Ensures photos fill the square without stretching */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .grid-image:hover {
+    transform: scale(1.03); /* Slight zoom effect on hover */
+  }
+
+  /* Mobile tweaks */
+  @media (max-width: 600px) {
+    .post-card {
+      padding: 25px;
+      margin: 15px;
+    }
+    .grid-image {
+      height: 150px; /* Smaller images on phones */
+    }
+  }
+</style>

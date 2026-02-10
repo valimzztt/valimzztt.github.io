@@ -69,8 +69,11 @@ experiences:
       - role: Intern
         time: Jan 2026 - Present
         company: Fraunhofer Institute for Integrated Systems and Device Technology (IISB), Erlangen, Germany
-        details: 
-          
+        details: |
+          Developing Physics-Informed Neural Networks (PINNs) and quantum computing algorithms to simulate material- and device-level processes relevant to next-generation battery systems.
+          Investigating separable and factorized neural network architectures to address high-dimensional input spaces and reduce computational complexity in multi-scale simulations.
+          Embedding physical constraints directly into model architectures and loss functions to improve stability, interpretability, and extrapolation capabilities.
+          Exploring quantum algorithms for material investigation, focusing on their potential to enhance accuracy and efficiency in modeling complex electrochemical interactions.
       - role: Research Assistant
         time: 2024 - Present
         company: McGill University, Montreal
@@ -213,13 +216,17 @@ publications:
 skills:
   title: Digital Skills
   toolset:
-    - name: Programming Languages
-      type: Python / C++ / Java / JavaScript / MATLAB 
-    - name: Web Development
-      type: HTML / CSS / React
+    - name: Programming & Scripting
+      type: Python / C++ / Java / JavaScript / MATLAB / Java / Julia / Bash (Linux)
+    - name: Machine Learning & AI
+      type: PyTorch / TensorFlow / Hugging Face / Physics-Informed Neural Networks / Model Training & Validation
+    - name: Scientific Computing
+      type: Numerical Methods / Data Analysis / Optimization / Monte Carlo Simulations
     - name: High Performance Computing
       type: OpenMP / MPI
-    - name: Data Analysis
-      type: Pandas / Numpy / Scipy / Matplotlib
+    - name: Web Development
+      type: HTML / CSS / React
     - name: Ab-initio DFT software
-      type: VASP / Quantum Espresso
+      type: VASP / Quantum Espresso / Wannier90
+    - name: Engineering & Prototyping
+      type: Arduino / AutoCAD / SolidWorks

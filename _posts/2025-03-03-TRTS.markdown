@@ -2,10 +2,11 @@
 layout: post
 title:  "What Can We Learn from Time-Resolved Terahertz Spectroscopy?"
 date: 2025-04-12
-category: post
+category: [projects]
 ---
 
-## Introduction
+## What Can We Learn from Time-Resolved Terahertz Spectroscopy?
+
 This presentation is a way for me to showcase the core ideas and impact of my research in a way that’s as approachable as possible. First of all, my research is all about how light interacts with matter, a fundamental process that underpins technologies like solar cells, sensors, and LEDs.
 But not all light is the same. To understand the kind of light I work with, we need to start by looking at the electromagnetic spectrum — a map of all the different “types” of light that exist, from radio waves to X-rays.
 
