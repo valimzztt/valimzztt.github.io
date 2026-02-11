@@ -137,3 +137,21 @@
     overflow-x: auto; /* Scroll horizontal if links overflow */
   }
 }
+
+/* Remove default margin from the list itself to keep it tidy */
+.entry ul {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* Add spacing between the list items */
+.entry li {
+  margin-bottom: 4px;
+  line-height: 1.5;   /* Improves readability */
+}
+
+/* Style the bullet point ("marker") specifically */
+.entry li::marker {
+  color: #999;       /* Makes it Lighter (Grey) */
+  font-size: 0.7em;  /* Makes it Smaller */
+}

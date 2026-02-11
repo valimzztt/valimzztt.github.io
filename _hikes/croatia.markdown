@@ -55,7 +55,6 @@ gallery:
     </div>
   </aside>
   <main class="hike-main">
-    
     <div class="hike-hero" style="background-image: url('{{ page.image | relative_url }}');">
       <div class="hero-overlay">
         <h1>{{ page.title }}</h1>

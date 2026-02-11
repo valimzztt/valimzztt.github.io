@@ -70,14 +70,16 @@ experiences:
         time: Jan 2026 - Present
         company: Fraunhofer Institute for Integrated Systems and Device Technology (IISB), Erlangen, Germany
         details: |
-          Developing Physics-Informed Neural Networks (PINNs) and quantum computing algorithms to simulate material- and device-level processes relevant to next-generation battery systems.
-          Investigating separable and factorized neural network architectures to address high-dimensional input spaces and reduce computational complexity in multi-scale simulations.
-          Embedding physical constraints directly into model architectures and loss functions to improve stability, interpretability, and extrapolation capabilities.
-          Exploring quantum algorithms for material investigation, focusing on their potential to enhance accuracy and efficiency in modeling complex electrochemical interactions.
+          *AI-augmented Simulation Group*
+          - Investigating and implementing Physics-Informed Neural Networks (PINNs) for quantum simulation of multi-electron systems, integrating physical constraints directly into neural network architectures to improve stability and physical consistency.
+          - Developing numerical frameworks for solving high-dimensional quantum problems with ML-enhanced approaches, focusing on correlated electron systems.
+          - Designing and implementing quantum circuits to compute electronic structure properties of battery cathode materials (e.g., FePO₄), exploring hybrid quantum-classical workflows.
+          - Evaluating the applicability of quantum computing methods to real-world materials science challenges in energy storage.
       - role: Research Assistant
         time: 2024 - Present
         company: McGill University, Montreal
         details: |
+          Ultrafast THz Spectroscopy Group – Prof. Dr. David Cooke
           My research focuses on probing the dynamics of polaron formation in all-inorganic perovskites using ultrabroadband terahertz spectroscopy
           Involves extensive experimental work on an optical table, including the construction of a state-of-the-art THz Time-Domain Spectroscopy (THz-TDS) and Time-Resolved Terahertz Spectroscopy (TRTS) setup.
           Analyzing the impact of polaron dynamics on charge carrier mobility and scattering, with the goal of improving the design of optoelectronic materials for energy conversion.
@@ -86,9 +88,9 @@ experiences:
         time: 2014 - 2015
         company: Stewart Blusson Quantum Matter Institute, Vancouver
         details: |
-          Hallas Lab – Prof. Dr. Alannah Hallas
-          Investigated the structural stability and magnetic properties of pyrochlore compounds Li(Ga,In)Cr₄O₈ using ab-initio methods.
-          Developed a computational approach combining DFT ground-state energy calculations, Wannierization, and first-principles linear-response techniques to resolve magnetic exchange interactions.
+          Quantum Materials Group – Prof. Dr. Alannah Hallas
+            - Investigated the structural stability and magnetic properties of pyrochlore compounds Li(Ga,In)Cr₄O₈ using ab-initio methods.
+            - Developed a computational approach combining DFT ground-state energy calculations, Wannierization, and first-principles linear-response techniques to resolve magnetic exchange interactions.
             - Gained proficiency in VASP, Quantum Espresso, and Wannier90.
             - Identified key factors influencing structural stability and its interplay with magnetic properties.
 

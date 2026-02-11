@@ -22,7 +22,9 @@
         {% for exp in site.data.cv.experiences.info %}
           <div class="entry">
             <strong>{{ exp.role }}</strong>, {{ exp.company }} <span class="dates">{{ exp.time }}</span>
-            <p>{{ exp.details | markdownify }}</p>
+            <div class="details">
+              {{ exp.details | markdownify }}
+            </div>
           </div>
         {% endfor %}
       </section>
@@ -76,4 +78,3 @@
       
     </main>
   </div>
-  

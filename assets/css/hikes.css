@@ -9,16 +9,24 @@
     margin-bottom: -60px; /* Pulls the content up slightly for overlap effect */
     z-index: 1;
   }
-  
+
   .hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 80px;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    border-radius: 0 0 8px 8px;
+    color: white;
   }
+
+  .hero-overlay h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+
   
   .hero-content {
     text-align: center;
@@ -182,3 +190,219 @@
       order: -1; /* Puts stats ABOVE story on mobile (optional) */
     }
   }
+/* These are the style itemso f the single hikes */
+
+.hike-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: 300px 1fr; /* Sidebar fixed, content flexible */
+  gap: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+}
+.hike-sidebar {
+  position: sticky;
+  top: 40px;
+  height: fit-content;
+}
+
+.stats-card h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.stat-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-weight: 700;
+  color: #333;
+  text-align: right;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #eaeaea;
+  margin: 20px 0;
+}
+
+/* --- Buttons --- */
+.hike-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hike-btn {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: #5ea88e; /* Your Green Theme */
+  color: white;
+  border: 1px solid #5ea88e;
+}
+
+.btn-primary:hover {
+  background-color: #4e8f78;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #555;
+  border: 1px solid #ddd;
+}
+
+.btn-outline:hover {
+  border-color: #5ea88e;
+  color: #5ea88e;
+}
+
+.hike-hero {
+  height: 350px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden; /* Keeps image corners rounded */
+}
+
+
+.hero-overlay h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.hero-date {
+  margin: 5px 0 0 0;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+.content-card p {
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+/* --- Gallery Grid --- */
+.gallery-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hike-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 800px) {
+  .hike-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hike-sidebar {
+    position: static; /* Unstick sidebar on mobile */
+    order: 2; /* Move it below content if you prefer */
+  }
+
+  .hike-hero {
+    height: 200px;
+  }
+}
+
+/* --- Sidebar Layout --- */
+.hike-sidebar {
+  position: sticky;
+  top: 40px;
+  height: fit-content;
+  /* Add these lines to manage spacing between the stats and gallery */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  /* Optional: If gallery is long, allow sidebar to scroll independently */
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+/* --- Stats Card (Your existing styles, kept for reference) --- */
+.stats-card h3, .gallery-card h3 { 
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #5ea88e;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* --- Sidebar Gallery Styling --- */
+.sidebar-gallery-grid {
+  display: grid;
+  /* Creates a 2-column grid. Change to 3fr for 3 columns if needed */
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px;
+}
+
+.sidebar-gallery-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Makes images perfect squares */
+  object-fit: cover;   /* Crops image to fill the square without stretching */
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.sidebar-gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* --- General Card Styling (Ensuring consistent white boxes) --- */
+.hike-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-bottom: 20px; /* Spacing for mobile when sidebar stacks */
+}
