@@ -1,14 +1,15 @@
 ---
 layout: post
 title: "Generating Laser-Induced Plasma"
-date: 2025-04-15
+date: 2026-07-15
 author: Valentina Mazzotti
-categories: [Lab Diaries]
+categories: [projects]
 tags: [plasma, ultrafast]
 ---
 
-This week, we had some visitors in the Department, and so we decided to show them what it means to operate a laser system with 35 fs pulse duration.  
-In our lab, we use a **Ti:Sapphire Coherent laser** system operating at a repetition rate of **1 MHz**, delivering **ultrashort femtosecond pulses** in the near-infrared (~800 nm).
+This week, we had visitors in the Department, which meant we had the perfect excuse to show what a 35 fs laser pulse can actually do.
+
+In our lab, we operate a Ti:Sapphire Coherent laser system running at a repetition rate of 1kHz and delivering ultrashort pulses at ~800 nm. What does that mean in practice? It means that every second, 1000 pulses, each only 35 femtoseconds long, are sent through our optical setup. Because the pulse duration is so short, the energy is compressed into an incredibly brief time window. Even with modest pulse energies, this results in extremely high peak powers. When tightly focused, those pulses can generate electromagnetic fields strong enough to rival the internal fields binding electrons in atoms, all within a volume smaller than a grain of dust, and for only 35 femtoseconds.
 
 <video width="560" height="315" muted controls>
   <source src="/assets/videos/Plasma.MP4" type="video/mp4">
@@ -17,8 +18,22 @@ In our lab, we use a **Ti:Sapphire Coherent laser** system operating at a repeti
 
 ### So, how can you generate plasma by focusing a femtosecond laser?
 
-When an intense femtosecond pulse is tightly focused, for example with a lens of focal length ~50–100 mm, the electric field becomes strong enough to **ionize air molecules**. This ionization occurs via nonlinear processes such as **multiphoton ionization** and **avalanche ionization**, which liberate electrons and create a **plasma spark** — often accompanied by a bright flash and audible pop!
+When we tightly focus the beam of a femtosecond laser with a lens, the intensity at the focal point becomes extreme. Even with pulse energies in the microjoule range, compressing that energy into 35 fs leads to peak powers on the order of gigawatts.
 
-What’s special about femtosecond lasers is that the energy is packed into an incredibly short duration, leading to extremely high **peak powers**. Even with pulse energies in the microjoule range, the peak intensity at focus can easily exceed **10¹³ W/cm²**, enough to break down the air.
+At focus, the electric field becomes comparable to the internal Coulomb fields binding electrons in air molecules.
 
-This phenomenon is not only fun to demonstrate but also lies at the heart of various advanced applications, such as time-resolved spectroscopy. 
+And that’s when things get interesting. The field becomes strong enough to rip electrons from nitrogen and oxygen molecules through nonlinear ionization mechanisms, which include the following types:
+
+- **Multiphoton ionization**: several photons are absorbed simultaneously to overcome the ionization potential.
+- **Tunneling ionization**: the strong electric field distorts the Coulomb potential, allowing electrons to tunnel out.
+- **Avalanche ionization**: freed electrons gain energy from the laser field and collide with other molecules, liberating even more electrons.
+
+Within a few femtoseconds, a cascade builds up and a localized laser-induced plasma (LIP) forms, which is a partially ionized gas containing free electrons and ions.
+
+What we see as a bright blue-white spark is actually electron recombination emission, molecular fluorescence  and Bremsstrahlung radiation from accelerating charges, all in one! And the small “pop” you sometimes hear (in the video here as well)? That’s a tiny shockwave from the rapid heating and expansion of the plasma channel.
+Just to make things clear, longer pulses (in the nanoseconds range) can also generate plasma, but femtosecond pulses do it differently. Because the energy is delivered faster than the lattice or surrounding gas can respond thermally, the ionization happens before significant heat diffusion occurs. This is often called "cold” ablation" in solids, where energy is deposited into electrons first, with minimal collateral thermal damage.
+
+For air breakdown, this means etremely high peak intensities (>10¹³ W/cm²), a very strongly nonlinear interaction and a highly localized plasma formation. In other words: we are briefly turning air into a conductive state using nothing but light.
+
+Anyways, I will end this short blog post that, while this demo remains a reminder of what ultrafast laser physics is able to achieve, it is also an opportunity to have a good time and see the shocked visitors faces, when they see how even "harmless" infra-red light, when focused enough, can overcome atomic binding forces and creates the plasma!
+

@@ -70,7 +70,7 @@
 .info-grid {
   display: grid;
   grid-template-columns: 120px 1fr; /* Label vs Value */
-  gap: 15px 20px;
+  gap: 10px 15px;
   align-items: baseline;
 }
 

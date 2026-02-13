@@ -24,16 +24,23 @@ permalink: /cv/
     <p class="cv-intro">See <a href="https://www.linkedin.com/in/valentina-mazzotti/">my LinkedIn profile</a> for additional information.</p>
 
     <section id="personal-info" class="cv-card">
-      <h2>Personal information</h2>
+      <h2>{{ site.data.cv.personal.title }}</h2>
       <div class="info-grid">
-        <div class="info-label">Name</div>
-        <div class="info-value">Valentina Mazzotti</div>
         
-        <div class="info-label">Email</div>
-        <div class="info-value highlight">valimzztt@gmail.com</div>
+        <div class="info-label">Name</div>
+        <div class="info-value">{{ site.data.cv.personal.name }}</div>
 
-        <div class="info-label">Address</div>
-        <div class="info-value">Montreal, Quebec, Canada</div>
+        <div class="info-label">Email</div>
+        <div class="info-value highlight">
+          <a href="mailto:{{ site.data.cv.personal.email }}">{{ site.data.cv.personal.email }}</a>
+        </div>
+
+        <div class="info-label">Location</div>
+        <div class="info-value">{{ site.data.cv.personal.location }}</div>
+
+        <div class="info-label">Citizenship</div>
+        <div class="info-value">{{ site.data.cv.personal.citizenship }}</div>
+
       </div>
     </section>
 

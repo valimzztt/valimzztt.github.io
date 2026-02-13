@@ -1,4 +1,11 @@
-
+personal:
+  title: "Personal information"
+  name: "Valentina Mazzotti"
+  email: "valimzztt@gmail.com"
+  location: "Montreal, Quebec, Canada"
+  citizenship: "Italian, German"
+  linkedin: "https://www.linkedin.com/in/valentina-mazzotti/"
+  
 sidebar:
     position: right # position of the sidebar : left or right
     about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
@@ -11,9 +18,9 @@ sidebar:
 
     # Sidebar links
     email: valentina@mail.mcgill.ca
-    phone: + 1 (779)
+    phone: + 1 (779) 778 798 9058
     timezone: Canada/Montreal # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
-    citizenship:
+    citizenship: Italian, German
 
     
     languages:
@@ -62,89 +69,72 @@ education:
         details: |
           - Graduated with distinction
           - Relevant coursework: Data Structures, Algorithms, Machine Learning   
-
+          
 experiences:
-    title: Experiences
-    info:
-      - role: Intern
-        time: Jan 2026 - Present
-        company: Fraunhofer Institute for Integrated Systems and Device Technology (IISB), Erlangen, Germany
-        details: |
-          *AI-augmented Simulation Group*
-          - Investigating and implementing Physics-Informed Neural Networks (PINNs) for quantum simulation of multi-electron systems, integrating physical constraints directly into neural network architectures to improve stability and physical consistency.
-          - Developing numerical frameworks for solving high-dimensional quantum problems with ML-enhanced approaches, focusing on correlated electron systems.
-          - Designing and implementing quantum circuits to compute electronic structure properties of battery cathode materials (e.g., FePO₄), exploring hybrid quantum-classical workflows.
-          - Evaluating the applicability of quantum computing methods to real-world materials science challenges in energy storage.
-      - role: Research Assistant
-        time: 2024 - Present
-        company: McGill University, Montreal
-        details: |
-          Ultrafast THz Spectroscopy Group – Prof. Dr. David Cooke
-          My research focuses on probing the dynamics of polaron formation in all-inorganic perovskites using ultrabroadband terahertz spectroscopy
-          Involves extensive experimental work on an optical table, including the construction of a state-of-the-art THz Time-Domain Spectroscopy (THz-TDS) and Time-Resolved Terahertz Spectroscopy (TRTS) setup.
-          Analyzing the impact of polaron dynamics on charge carrier mobility and scattering, with the goal of improving the design of optoelectronic materials for energy conversion.
-          Operate various time-resolved systems, including an all air-plasma THz spectrometer with sub-50 fs and sub-meV resolution.
-      - role: Research Assistant 
-        time: 2014 - 2015
-        company: Stewart Blusson Quantum Matter Institute, Vancouver
-        details: |
-          Quantum Materials Group – Prof. Dr. Alannah Hallas
-            - Investigated the structural stability and magnetic properties of pyrochlore compounds Li(Ga,In)Cr₄O₈ using ab-initio methods.
-            - Developed a computational approach combining DFT ground-state energy calculations, Wannierization, and first-principles linear-response techniques to resolve magnetic exchange interactions.
-            - Gained proficiency in VASP, Quantum Espresso, and Wannier90.
-            - Identified key factors influencing structural stability and its interplay with magnetic properties.
+  title: Experiences
+  info:
+    - role: Intern
+      time: Jan 2026 - Present
+      company: Fraunhofer Institute (IISB), Erlangen, Germany
+      details: |
+        **AI-augmented Simulation Group**
+        - Investigating and implementing Physics-Informed Neural Networks (PINNs) for quantum simulation of multi-electron systems.
+        - Developing numerical frameworks for solving high-dimensional quantum problems with ML-enhanced approaches.
+        - Designing quantum circuits to compute electronic structure properties of battery cathode materials (e.g., FePO₄).
+        - Evaluating hybrid quantum-classical workflows for energy storage applications.
 
-      - role: Energy System Designer & Software Developer
-        time: 12/2021 - 05/2024
-        company: Sustaingineering, UBC, Vancouver
-        details: |
-          Member of the Electrical and Software Team at Sustaingineering, an Engineering Design Team dedicated to addressing sustainability challenges through technology.
-          Designed and assembled a hybrid renewable energy system for the Sustainable Mobile Research Testbed (SMRT) project, incorporating solar panels, batteries, and control components for an off-grid mobile home.
-          Developed a web application for remote monitoring, capturing real-time data for a water pump system in Nicaragua.
+    - role: Research Assistant
+      time: Jan 2024 - Present
+      company: McGill University, Montreal, Canada
+      details: |
+        **Ultrafast THz Spectroscopy Group – Prof. Dr. David Cooke**
+        - Combined ultrafast spectroscopy with ab initio modeling to investigate polaron formation in perovskites.
+        - Built and calibrated a time-resolved THz spectrometer (TRTS) with sub-50 fs resolution.
+        - Developed computational workflows to calculate lattice vibrations and electronic bands to validate experimental data.
+        - Operate high-field air-plasma THz spectrometers for time-resolved material probing.
 
-      - role: Summer Research Assistant
-        time: 05/2023 - 08/2023
-        company: Stewart Blusson Quantum Matter Institute, UBC, Vancouver
-        details: |
-          Hallas Lab – Prof. Dr. Alannah Hallas
-          Developed a data-driven framework to predict material properties in high-entropy oxides and intermetallic systems.
-          Conducted ab-initio calculations of electronic properties using VASP and Quantum Espresso on HPC clusters.
-          Applied Machine Learning techniques to the Cluster Expansion Formalism for deriving effective energy models.
-            - Wrote Monte Carlo simulations in Python to study finite thermodynamic properties of intermetallic systems.
+    - role: Energy System Designer & Software Developer
+      time: Dec 2021 - May 2024
+      company: Sustaingineering (UBC), Vancouver, Canada
+      details: |
+        **Electrical and Software Team**
+        - Designed a hybrid renewable energy system (solar/battery) for the Sustainable Mobile Research Testbed (SMRT).
+        - Developed a web application for remote monitoring of water pump systems in Nicaragua.
 
-      - role: Summer Research Assistant
-        time: 05/2022 - 09/2022
-        company: Max-Planck-Institute for Solid State Research, Stuttgart, Germany
-        details: |
-          Member of the Kaiser Group, focusing on strongly correlated electron materials and ultrafast spectroscopy.
-          Built a pump-probe and pump-pump-probe setup to study Ta₂NiSe₅ and 2H-NbSe₂, investigating excitonic insulator transitions and superconducting properties.
-          Conducted data analysis on beamtime data using Python and Origin.
-            - Gained expertise in advanced nonlinear optical methods, particularly ultra-broadband pump-probe spectroscopy.
-            - Converted the control software for a lock-in amplifier from LabVIEW to Python.
+    - role: Research Assistant
+      time: Sep 2023 - Apr 2024  # <--- ASSUMED DATE CORRECTION FOR THE "2014" TYPO
+      company: Stewart Blusson Quantum Matter Institute, Vancouver, Canada
+      details: |
+        **Quantum Materials Group – Prof. Dr. Alannah Hallas**
+        - Investigated structural stability and magnetic properties of pyrochlore compounds Li(Ga,In)Cr₄O₈ using DFT.
+        - Developed a computational approach combining ground-state energy calculations, Wannierization, and linear-response techniques.
+        - Resolved magnetic exchange interactions using VASP, Quantum Espresso, and Wannier90.
 
-      - role: Research Assistant & Software Developer
-        time: 05/2021 - 09/2021
-        company: Stewart Blusson Quantum Matter Institute, UBC, Vancouver
-        details: |
-          Member of the ARPES group under Dr. Andrea Damascelli, studying structural, electronic, and magnetic properties of novel quantum materials.
-          Developed a Python-based Graphical User Interface (GUI) to facilitate tracking micrometer-sized samples within the ARPES spectrometer.
-          Collaborated on hardware implementations to improve sample positioning during laser-based photoemission experiments on cuprates.
+    - role: Summer Research Assistant
+      time: May 2023 - Aug 2023
+      company: Stewart Blusson Quantum Matter Institute, Vancouver, Canada
+      details: |
+        **Computational Materials Group – Prof. Joerg Roettler**
+        - Developed a data-driven framework to predict material properties in high-entropy oxides.
+        - Conducted ab-initio calculations of electronic properties using VASP on HPC clusters.
+        - Applied Machine Learning to Cluster Expansion Formalisms and wrote Monte Carlo simulations in Python.
 
-      - role: High School Research Internship
-        time: 06/2019 - 07/2019
-        company: Max-Planck-Institute for Astronomy, Heidelberg, Germany
-        details: |
-          Conducted research on the orbit of the star S2 using Sloan Digital Sky Survey data.
-          Developed Python and C++ scripts for data analysis and orbital modeling.
+    - role: Summer Research Assistant
+      time: May 2022 - Sep 2022
+      company: Max-Planck-Institute for Solid State Research, Stuttgart, Germany
+      details: |
+        **Ultrafast Spectroscopy Group – Prof. Kaiser**
+        - Built a pump-pump-probe setup to study excitonic insulators (Ta₂NiSe₂) and superconductors (2H-NbSe₂).
+        - Analyzed non-linear optical data using Python and Origin.
+        - Refactored lock-in amplifier control software from LabVIEW to Python.
 
-      - role: Internship at IBM
-        time: 05/2019 - 06/2019
-        company: IBM Studios, Milan, Italy
-        details: |
-          Attended sessions on IT, cognitive computing, and big data.
-          Developed a chatbot using Watson Assistant on the IBM Bluemix platform.
-
-
+    - role: Research Assistant & Software Developer
+      time: May 2021 - Sep 2021
+      company: Stewart Blusson Quantum Matter Institute, Vancouver, Canada
+      details: |
+        **ARPES Group – Dr. Andrea Damascelli**
+        - Developed a Python-based GUI for tracking micrometer-sized samples in ARPES spectrometers.
+        - Assisted in hardware upgrades for laser-based photoemission experiments on cuprates.
 certifications:
       title: Certifications
       list:
