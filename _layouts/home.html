@@ -1,32 +1,166 @@
 ---
 layout: default
 ---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  <div class="wrapper">
+  
+    {% if page.math %}
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    {% endif %}
 
-  {{ content }}
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
+    </div>
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%}
+    {% if site.inter_post_navigation %}
+      <nav class="post-navigation" aria-label="Post Navigation">
+        <div class="nav-links">
+          {% if page.previous.url %}
+            <a href="{{ page.previous.url | prepend: site.baseurl }}" class="nav-prev" title="{{ page.previous.title }}">
+              <span class="nav-label"><i class="fa fa-arrow-left"></i> Previous</span>
+              <span class="nav-title">{{ page.previous.title | truncatewords: 5 }}</span>
+            </a>
+          {% else %}
+            <span class="nav-disabled"></span>
+          {% endif %}
 
-</div>
+          {% if page.next.url %}
+            <a href="{{ page.next.url | prepend: site.baseurl }}" class="nav-next" title="{{ page.next.title }}">
+              <span class="nav-label">Next <i class="fa fa-arrow-right"></i></span>
+              <span class="nav-title">{{ page.next.title | truncatewords: 5 }}</span>
+            </a>
+          {% else %}
+            <span class="nav-disabled"></span>
+          {% endif %}
+        </div>
+      </nav>
+    {% endif %}
+
+    {% if site.disqus_shortname and page.comments != false %}
+      <section class="disqus">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_shortname = '{{ site.disqus_shortname }}';
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </section>
+    {% endif %}
+
+    <div class="mini-archive">
+      {% for category in site.categories %}
+        {% capture cat %}{{ category | first }}{% endcapture %}
+        
+        <div class="category-section">
+          
+          <h2 class="cat-header" id="{{cat}}">{{ cat | capitalize }}</h2>
+          
+          {% for desc in site.descriptions %}
+            {% if desc.cat == cat %}
+              <p class="desc"><em>{{ desc.desc }}</em></p>
+            {% endif %}
+          {% endfor %}
+          
+          <ul class="posts-list">
+          {% for post in site.categories[cat] %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                {{ post.title }}
+              </a>
+            </li>
+          {% endfor %}
+          </ul>
+        
+        </div>
+      {% endfor %}
+      
+    </div>
+
+  </div>
+</article>
+
+<style>
+  .archive-divider {
+    margin-bottom: 3rem;
+    border: 0;
+    border-top: 1px solid #eaeaea;
+  }
+
+  /* Spacing between categories */
+  .category-section {
+    margin-bottom: 3rem; /* Adds the space between the groups */
+  }
+
+  /* Category Headings */
+  .cat-header {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    border-bottom: 2px solid #5ea88e; /* The Green Underline */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  /* The Description */
+  .desc {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* The List */
+  .posts-list {
+    list-style: none; /* Removes bullet points for a cleaner look */
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .posts-list li {
+    margin-bottom: 0.6rem;
+    display: flex; /* Aligns date and title nicely */
+    align-items: baseline;
+  }
+
+  /* The Date (Green Accent) */
+  .post-meta {
+    color: #5ea88e; /* Your Green Theme Color */
+    min-width: 110px; /* Aligns all titles */
+    margin-right: 10px;
+  }
+
+  /* The Title Link */
+  .post-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .post-link:hover {
+    color: #5ea88e; /* Green on hover */
+    text-decoration: underline;
+  }
+
+  /* Mobile: Stack date and title if screen is too small */
+  @media (max-width: 500px) {
+    .posts-list li {
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      margin-bottom: 2px;
+    }
+  }
+</style>

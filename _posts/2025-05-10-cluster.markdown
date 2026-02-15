@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "A Machine Learning-Enhanced Cluster Expansion Approach"
-date:   2024-12-25 20:44:51 +0100
+date:   2025-12-23 20:44:51 +0100
+title:    A Machine Learning-Enhanced Cluster Expansion Approach
 categories: [projects]
+author: Valentina Mazzotti
 bibliography:
 - references_cluster.bib
-author: Valentina Mazzotti, Cecilia Soroco
-
 ---
+# A Machine Learning-Enhanced Cluster Expansion Approach
 
 Understanding the properties of materials at the atomic level is crucial for scientific discovery and technological innovation {% cite national1999condensed %}. Calculating these properties for all possible atomic arrangements using first-principle methods like density functional theory (DFT) {% cite DFT1 %} is computationally demanding. Cluster expansion (CE) offers a solution, by allowing to predict the energies of different configurations and concentrations of several elements arranged on a fixed lattice {% cite morgan2017using %}. 
 
@@ -40,17 +40,10 @@ Therefore, an initial task involves constraining model complexity by setting cut
 
 This first experiment aims to determine the optimal balance between model complexity and generalization capability to unseen data. By methodically adjusting cluster size constraints using Elastic Net regression {% cite ElasticNet %} with predefined lambda ($$\lambda$$) and L1 ratio values, we document both the root mean square error (RMSE) and the validation (LOCV) score, using 5-fold cross validation. This allows us to assess how these parameters influence the model's predictive accuracy and its ability to effectively portray the ground-state energy of crystalline solids.
 
-<figure id="fig:rmse_cutoff_5CV">
-<div style="display: flex; justify-content: center; gap: 10px;">
-    <div style="width: 48%;">
-        <img src="figs/RMSE_DiameterCutoff.png" style="width:100%" />
-    </div>
-    <div style="width: 48%;">
-        <img src="figs/CVScore_DiameterCutoff.png" style="width:100%" />
-    </div>
+<div style="float: right; margin-left: 20px; margin-bottom: 10px; max-width: 60%;">
+  <img src="/assets/images/figs_neuralnetwork/CVScore_DiameterCutoff.png" alt="SrVO3 Structure" style="width: 100%; border-radius: 6px;">
+  <figcaption>Root Mean Square Error and CV score as a function of cluster diameter cutoff (in Angstrom) using Elastic Net with predefined lambda (\(\lambda = 0.01\)) and L1 ratio value equal to \(0.1\). Darker colors correspond to lower RMSE and CV scores. Each axis of the three-dimensional plot represents the diameter of 2-body, 3-body or 4-body clusters respectively.</figcaption>
 </div>
-<figcaption>Root Mean Square Error and CV score as a function of cluster diameter cutoff (in Angstrom) using Elastic Net with predefined lambda ($$\lambda = 0.01$$) and L1 ratio value equal to $$0.1$$. Darker colors correspond to lower RMSE and CV scores. Each axis of the three-dimensional plot represents the diameter of 2-body, 3-body or 4-body clusters respectively.</figcaption>
-</figure>
 
 #### Results 
 
@@ -68,20 +61,12 @@ $$
 
 where $$\mathbf{V} = [V_0, V_1, \dots, V_{N_c-1}]^T$$ is the column vector of ECIs and $$\boldsymbol{\phi}(\sigma) = [\phi_0, \phi_1, \dots, \phi_{N_c-1}]$$ is the row vector of cluster functions for configuration $$\sigma$$. When formulated as a linear regression problem, the construction of the CE model suffers the limitations of the least-squares (LS) fit, among which the most well-known one is the underfitting/overfitting dilemma, also known as bias/variance trade-off {% cite Variance-Bias %}.
 
-In this experiment, we compare the $$R^2$$ value and the average validation error for different regularization techniques to see which would yield the best results. We set the diameters cutoffs to be $$7$$ for the two-body cluster, $$6$$ for the three-body cluster, and $$6$$ for the four-body cluster, as determined in the previous experiment. The results of the root-mean-squared error (RMSE) and leave-one-out cross-validation (LOCV), as well as the number of features selected, is summarized in Table 1. Figures below demonstrate plots of RMSE corresponding to different hyperparameters for Lasso regression, Ridge regression and ElasticNet. The fit of CE-predicted energy versus DFT energy for different regularization techniques can be seen in the Appendix.
-
-<figure id="fig:Experiment2-ElasticNetHyperparam">
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-    <div style="width: 45%;">
-        <img src="figs/lasso_avgrmse1.png" style="width:100%" />
-        <img src="figs/ridge_avgrmse1.png" style="width:100%" />
-    </div>
-    <div style="width: 45%;">
-        <img src="figs/ElasticNet_Heatmap_HyperparameterChoice.png" style="width:100%" />
-    </div>
+<div style="float: right; margin-left: 20px; margin-bottom: 10px; max-width: 50%;">
+  <img src="/assets/images/figs_neuralnetwork/ElasticNet_Heatmap_HyperparameterChoice.png" alt="SrVO3 Structure" style="width: 100%; border-radius: 6px;">
+ <figcaption>Elastic Net Hyperparameter Heatmap showing with \(\log(\alpha) = -4.778\)  and L1 ratio = \(0.8\) yielding the best RMSE of \(0.065\).</figcaption>
 </div>
-<figcaption>Elastic Net Hyperparameter Heatmap showing with $$\log(\alpha) = -4.778$$ and L1 ratio = $$0.8$$ yielding the best RMSE of $$0.065$$.</figcaption>
-</figure>
+
+In this experiment, we compare the $$R^2$$ value and the average validation error for different regularization techniques to see which would yield the best results. We set the diameters cutoffs to be $$7$$ for the two-body cluster, $$6$$ for the three-body cluster, and $$6$$ for the four-body cluster, as determined in the previous experiment. The results of the root-mean-squared error (RMSE) and leave-one-out cross-validation (LOCV), as well as the number of features selected, is summarized in Table 1. Figures below demonstrate plots of RMSE corresponding to different hyperparameters for Lasso regression, Ridge regression and ElasticNet.
 
 | **Model** | **RMSE (eV/prim)** | **LOCV (eV/prim)** | **Number of features (out of 22)** |
 | :--- | :---: | :---: | :---: |
@@ -190,6 +175,5 @@ A logical extension of this study would involve a detailed assessment of the imp
 #### GitHub repository:
 
 Here is the link to the [GitHub repository](https://github.com/valimzztt/CPSC440-Project.git).
-
 
 {% bibliography --cited %}

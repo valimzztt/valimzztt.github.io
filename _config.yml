@@ -58,10 +58,8 @@ main_nav:
     url: /hikes/
   - title: "Outreach"
     url: /outreach/
-  - title: "Research"
+  - title: "Blog & Research"
     url: /research/
-  - title: "Contact"
-    url: /contact/
 
 collections:
   hikes:
@@ -101,7 +99,7 @@ scholar:
   order: ascending
 
   source: ./_bibliography
-  bibliography: references.bib  
+# bibliography: references.bib  
   bibliography_template: "{{reference}}"
 
   replace_strings: true

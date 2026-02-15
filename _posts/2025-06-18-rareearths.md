@@ -1,7 +1,7 @@
 ---
 layout: post
 date:   2025-06-25 20:44:51 +0100
-categories: [projects]
+categories: posts
 author: Valentina Mazzotti
 bibliography:
 - references.bib

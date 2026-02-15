@@ -1,0 +1,79 @@
+---
+layout: post
+title:   What Is a Polaron - and Why Should We Care?
+date:   2024-12-25 20:44:51 +0100
+categories: post
+author: Valentina Mazzotti
+---
+
+
+## Introduction
+
+Polarons are fermionic quasiparticles formed in polarizable materials—such as ionic crystals or polar semiconductors—through the coupling of excess electrons or holes with ionic vibrations. These entities play a significant role in determining materials' properties and functionalities.
+
+The concept dates back to 1933 when Lev Landau described an electron being trapped by lattice distortions. The term “polaron” was coined later in 1946 by Solomon Pekar, who described a charge carrier localized in a self-generated potential well.
+
+### Properties of Polarons
+
+Landau’s insight challenged earlier models that treated electrons and ions independently. In reality, injected charges displace surrounding ions, creating a polarization cloud that forms a composite quasiparticle—an electron (or hole) dressed by virtual phonons. This interaction modifies electron properties like effective mass and energy.
+
+Polarons are thus defined by their:
+- **Binding energy** $$E_0 $$
+- **Effective mass** $$m^*$$
+- **Response to electric and magnetic fields** (e.g., mobility, optical absorption)
+
+### Phonons and Their Role
+
+In polarons, longitudinal optical (LO) phonons are the key lattice vibrations. Phonons are quantized sound waves characterized by wavevector $$ \vec{k} $$, polarization $$ \vec{\xi}$$, and frequency $$ \omega_k$$. They can be transverse or longitudinal, and acoustic or optical—optical phonons are primarily involved in polaron formation.
+
+### Small vs. Large Polarons
+
+- **Large Polarons**: Delocalized wavefunction over many lattice sites; long-range interactions; coherent transport.
+- **Small Polarons**: Strong short-range interactions (e.g., in oxides); localized within one unit cell; exhibit thermally-activated hopping transport.
+
+### Small Polarons in Detail
+
+Even in a perfect lattice, electrons can self-localize due to lattice interactions (Holstein coupling). The Holstein model describes this with a 1D chain and a hopping parameter between sites. The model includes:
+1. Electron hopping term
+2. LO phonon term
+3. Short-range electron-phonon interaction term
+
+It cannot be solved exactly but captures the essence of short-range localized polaron formation.
+
+### Fröhlich (Large) Polarons
+
+Developed for electrons interacting with LO phonons under a continuum approximation. Unlike the Holstein model, the Fröhlich model treats the lattice as a polarizable continuum and focuses on long-range electron-phonon coupling.
+
+It uses a Hamiltonian involving:
+- Electron kinetic terms
+- Phonon creation/annihilation operators
+- Interaction terms defined by a coupling constant $$\alpha$$
+
+### Solving the Fröhlich Hamiltonian
+
+Two common variational approaches:
+- **Landau-Pekar Method**: Strong coupling regime; adiabatic approximation; classical phonon field.
+- **Lee-Low-Pines (LLP) Method**: Weak coupling regime; assumes plane wave electron.
+
+Both methods provide upper bounds for the polaron’s ground state energy.
+
+###  Feynman's Path Integral Approach
+
+Feynman filled the gap in the intermediate coupling regime by using a variational path-integral method. Key ideas include:
+- Integrating out phonons leads to a non-local (in time) effective electron action
+- Move to **imaginary time** simplifies isolating the ground state energy
+- Use of a **model action** with variational parameters \( M \) and \( \omega \)
+
+He used the **Jensen-Feynman inequality** to derive a variational upper bound for the polaron ground state energy. Monte Carlo simulations have since validated and extended this approach.
+
+## Why Study Polarons?
+
+Polarons are central to understanding charge transport in materials like hybrid perovskites, 2D materials, and organic semiconductors. They affect mobility, carrier lifetimes, and device performance in photovoltaics, thermoelectrics, and optoelectronics.
+
+In thermoelectrics, polarons influence properties like the Seebeck coefficient, thermal conductivity, and carrier mobility—making them essential for optimizing material performance.
+
+---
+
+The presentation, for which I have included the Power Point slides below, offers an accessible yet thorough walkthrough of the history, theory, and applications of polaron physics, from Holstein’s tight-binding approach to Feynman’s path-integral treatment. Enjoy!
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQsJZcs-H4JSWml8DUaWt1umPjYuxR9-64qVLB3MnTARa0IdC8Rc8CO5CsVVF3XpA/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="800" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

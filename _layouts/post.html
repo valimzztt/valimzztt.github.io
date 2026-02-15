@@ -2,46 +2,22 @@
 layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header-container {% if page.cover %}has-cover{% endif %}" 
-  {% if page.cover %}style="background-image: url('{{ page.cover | prepend: site.baseurl }}');"{% endif %}>
-  
-  <div class="scrim {% if page.cover %}has-cover{% endif %}">
-    
-    <div class="wrapper">
-      
-      <div class="scrim {% if page.cover %}has-cover{% endif %}">
-        <div class="header-content">
-          <h1 class="title" itemprop="name headline">{{ page.title }}</h1>
-          
-          <div class="info">
-            <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-              by <span itemprop="name">{{ page.author | default: site.author }}</span>
-            </span>
-            
-            <span class="separator"> • </span>
-            
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-              {{ page.date | date: "%B %-d, %Y" }}
-            </time>
-  
-            <span class="separator"> • </span>
-            <span class="reading-time" title="Estimated read time">
-              {% assign words = content | number_of_words %}
-              {% if words < 360 %}
-                1 min read
-              {% else %}
-                {{ words | divided_by: 180 }} min read
-              {% endif %}
-            </span>
-          </div>
-        </div>
-      </div>
+{% if page.math %}
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\(', '\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
 
-    </div>
-
-  </div>
-</header>
-
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+{% endif %}
 
   <div class="wrapper">
   
@@ -50,37 +26,11 @@ layout: default
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
     {% endif %}
-
-    <hr class="post-separator">
-
     <div class="post-content" itemprop="articleBody">
       {{ content }}
     </div>
 
-    <footer class="post-footer">
-      {% if page.categories.size > 0 %}
-      <div class="post-meta">
-        <span class="meta-label">Categories:</span>
-        {% for cat in page.categories %}
-          {% if site.jekyll-archives %}
-            <a href="{{ site.baseurl }}/category/{{ cat | slugify }}">{{ cat | capitalize }}</a>
-          {% else %}
-            <a href="{{ site.baseurl }}/posts/#{{ cat | slugify }}">{{ cat | capitalize }}</a>
-          {% endif %}
-          {% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </div>
-      {% endif %}
 
-      {% if page.tags.size > 0 %}
-      <div class="tags">
-        <span class="meta-label">Tags:</span>
-        {% for tag in page.tags %}
-          <a href="{{ site.baseurl }}/tag/{{ tag | slugify }}" class="tag-pill">{{ tag }}</a>
-        {% endfor %}
-      </div>
-      {% endif %}
-    </footer>
 
     {% if site.inter_post_navigation %}
       <nav class="post-navigation" aria-label="Post Navigation">

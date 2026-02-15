@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: posts
 title: "Generating Laser-Induced Plasma"
-date: 2026-07-15
+date: 2025-10-28
 author: Valentina Mazzotti
 categories: [projects]
-tags: [plasma, ultrafast]
 ---
 
 This week, we had visitors in the Department, which meant we had the perfect excuse to show what a 35 fs laser pulse can actually do.

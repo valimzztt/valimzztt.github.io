@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2025-07-02 20:44:51 +0100
-category: post
+category: posts
 author: Valentina Mazzotti
 title: My experience at the ComSciConCanada workshop
 ---

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 3-Minute-Thesis Competition
+title: 3-Minute-Thesis Competition - What Can We Learn from Time-Resolved Terahertz Spectroscopy?
 date: 2025-04-12
-category: post
+category: posts
 author: Valentina Mazzotti
 description: "My experience condensing years of research into 3 minutes for the McGill 3MT competition."
 ---
 
-### What Can We Learn from Time-Resolved Terahertz Spectroscopy?
+### 3-Minute-Thesis Competition: What Can We Learn from Time-Resolved Terahertz Spectroscopy?
 
 On March 18, 2025, I had the chance to take part in the McGill 3-Minute Thesis (3MT) Competition. In this competition, graduate students (like me!) have the chance to showcase their research before a live audience. With only three minutes and a single slide, I had to engage my audience and convey the complexities of my work to a diverse, non-expert audience.
 
