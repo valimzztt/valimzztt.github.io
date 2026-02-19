@@ -13,7 +13,7 @@ Whether it's running, biking, hiking, or skiing, I find joy and energy in connec
   <img src="{{ page.hero_image }}" alt="Hiking intro" class="hero-img">
   <div class="hero-text">
     <h1>Welcome to My Hikes</h1>
-    <p>Discover some of my favorite hiking adventures from around the world 🌍</p>
+    <p>Discover some of my favorite hiking adventures🌍</p>
   </div>
 </div>
 

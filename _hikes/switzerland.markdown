@@ -65,10 +65,10 @@ gallery:
 
     <div class="hike-card content-card">
       <p>
-        On a sunny Saturdat of July 2022, I decided to drive from Stuttart, Germany (where I was doing an internship) to Swizterland todomyfirst solo-hike. I decided for a scenic alpine hike starting near Schwägalp and ascending to the summit of Säntis, offering some of the most stunning panoramic views of the Appenzell Alps Ihave ever seen. 
+        On a sunny Saturday of July 2022, I decided to drive from Stuttart, Germany (where I was doing an internship) to Swizterland to do my first solo-hike. I started going hikes since I was little, but I realized just up to that moment that I actually have never been on a hike completely alone. So that day, I decided to change that and chose a scenic alpine hike starting near Schwägalp and ascending to the summit of Säntis, as my first solo-hike. I didn't know that the hike would end bt offering some of the most stunning panoramic views of the Appenzell Alps I have ever seen. 
       </p>
       <p>
-        The trail was beautiful and winded through pastures, rugged rocky outcrops, and breathtaking ridgelines. I need to say that it was a quite challenging hike, with a high ratioof elevation versus of kms. Also, the top of the Säntis can be achieved by using a cable car so you will not have a lot of piece once youhaveclimbed to the top. Nevertheless, this has been one of the most breathtaking hikes I have everndone, and it keeps a special space in my heart. 
+        The trail was beautiful and winded through pastures, rugged rocky outcrops and breathtaking ridgelines. I need to say that it was a quite challenging hike, with a very steep elevation gain. Also, the top of the Säntis can be achieved by using a cable car so there were actually quite a bit of people at the top of mountain, which means you will not have a lot of peace once you have climbed to the top. Nevertheless, this has been one of the most breathtaking hikes I have ever done, and it keeps a special space in my heart. 
       </p>
     </div>
 

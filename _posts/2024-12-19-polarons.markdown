@@ -15,7 +15,7 @@ In these materials, electrons and holes interact strongly with lattice vibration
 
 Understanding polarons is therefore essential for understanding mobility, recombination, hot-carrier cooling, and the ultimate efficiency limits of optoelectronic devices.
 
-The concept of the polaron emerged in the early 20th century, when Lev Landau realized that an electron in a polar crystal would inevitably polarize its surrounding lattice. The electric field of the electron displaces nearby ions, creating a local distortion. In 1946, Solomon Pekar formalized this picture and introduced the term polaron to describe a charge carrier trapped — at least partially — by the potential well created by its own lattice deformation.
+The concept of the polaron emerged in the early 20th century, when Lev Landau realized that an electron in a polar crystal would inevitably polarize its surrounding lattice. The electric field of the electron displaces nearby ions, creating a local distortion. In 1946, Solomon Pekar formalized this picture and introduced the term polaron to describe a charge carrier trapped (at least partially) by the potential well created by its own lattice deformation.
 
 What makes the idea so powerful is that it fundamentally changes how we think about electrons in solids. Instead of treating electrons and ions independently, polaron theory acknowledges that they are dynamically coupled. The electron drags the lattice with it, and this interaction modifies key physical properties such as the ground-state (binding) energy, the effective mass, the mobility and the optical response. In essence, the electron is no longer free, but is instead renormalized by the vibrational degrees of freedom of the crystal.
 
@@ -25,7 +25,7 @@ This long-range interaction is fundamentally different from short-range deformat
 
 The strength of this interaction determines whether the carrier remains relatively delocalized or becomes self-trapped.
 
-## Large vs. Small Polarons — Two Limits of the Same Physics
+## Large vs. Small Polarons: Two Limits of the Same Physics
 
 Depending on the coupling strength and the electronic bandwidth, two limiting regimes can emerge.
 
@@ -35,7 +35,7 @@ When the coupling becomes strong and short-range, however, the lattice distortio
 
 These two regimes are often introduced as distinct categories, but in reality many technologically important materials sit in the intermediate coupling regime, where neither purely band-like nor purely hopping descriptions are sufficient.
 
-Theoretical Frameworks: From Holstein to Feynman
+## Theoretical Frameworks: From Holstein to Feynman
 
 Theoretical descriptions of polarons evolved along two main lines. The Holstein model describes electrons interacting locally with optical phonons on a discrete lattice. It captures the physics of self-trapping and is particularly useful for strongly correlated oxides and molecular crystals. The Fröhlich model, in contrast, treats the lattice as a polarizable continuum and focuses on long-range electron–phonon interactions. It introduces a dimensionless coupling constant $$\alpha$$, which controls the strength of the interaction.
 
@@ -43,19 +43,19 @@ Solving the Fröhlich Hamiltonian exactly is not possible in general, but powerf
 
 The most elegant unifying approach came from Richard Feynman, who used a variational path-integral formulation to treat the polaron problem across all coupling strengths. By integrating out the phonons and introducing a solvable trial action, he derived accurate ground-state energies in the intermediate regime, which is a remarkable achievement that remains foundational today.
 
-Why Polaron Physics Is So Relevant Today
+## Why Polaron Physics Is So Relevant Today
 
-Although polaron theory dates back nearly a century, it remains relevant for modern materials research, and stil a very active research area. 
+Although polaron theory dates back nearly a century, it remains relevant for modern materials research, and is stil a very active research area. 
 For example, in halide perovskites, large polaron formation has been invoked to explain unusually long carrier lifetimes and suppressed scattering. In transition-metal oxides, small polarons influence conductivity and catalytic behavior, while in thermoelectrics, polaron formation modifies the interplay between mobility and thermal conductivity. What unites all these systems, therefore, is that charge carriers cannot be understood without considering their coupling to the lattice.
 
-A Broader Perspective
+## A Broader Perspective
 
 At its core, polaron physics teaches us that charge transport is not purely an electronic phenomenon. Instead, it is a collective process involving both electrons and ions. Whether carriers move freely, sluggishly, or via hopping depends on how strongly they distort their environment. Many of today’s most promising functional materials lie precisely in this intermediate regime of electron–phonon coupling, where subtle renormalization effects can dramatically influence performance.
 
-For this reason, polarons are not merely a theoretical curiosity; they are central to understanding how real materials work.
+For this reason, polarons are not just a theoretical curiosity; they are central to understanding how real materials work, and this explains why so many efforts are now devoted to understanding how polaron form and evolve in all sorts of materials. 
 
 ---
 
-The presentation, for which I have included the Power Point slides below, offers an accessible yet thorough walkthrough of the history, theory, and applications of polaron physics, from Holstein’s tight-binding approach to Feynman’s path-integral treatment. Enjoy!
+This presentation, for which I have included the Power Point slides below, offers an accessible yet thorough walkthrough of the history, theory, and applications of polaron physics, from Holstein’s tight-binding approach to Feynman’s path-integral treatment. Enjoy!
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQsJZcs-H4JSWml8DUaWt1umPjYuxR9-64qVLB3MnTARa0IdC8Rc8CO5CsVVF3XpA/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="800" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
